@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parisienne&display=swap');
+
+body{
+    width: 1920px;
+    position: relative;
+    *{
+        box-sizing:border-box;
+    }
+}
+
+/* 여백 초기화 */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,
+table,th,td,tr,textarea,button,form,figure,figcaption{margin:0;padding:0;}
+
+/* a 링크 초기화 */
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table 
+{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans', sans-serif; 
+}
+
+/* 폰트 스타일 초기화 */
+em,address{font-style: normal;}
+em{color:red;}
+
+/* 블릿기호 초기화 */
+ul,li,ol {list-style: none;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 {font-size:1rem; font-weight: 500; display:inline-block;}
+
+/* 버튼초기화 */
+button{border: 0;}
+
+/* 반응형 이미지 */
+img, video{width:100%;}
+img {width: 100%; vertical-align: top;}
+img {border:0;}  //ie10
+
+/* table */
+table{border-collapse: collapse;}
+
+/* IR 효과 */
+.ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} 
+/* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;} 
+/* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_su {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;} 
+/* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+/* margin */
+.mt10{margin-top: 10px;}
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
+.mt25{margin-top: 25px;}
+.mt30{margin-top: 30px;}
+.mt35{margin-top: 35px;}
+.mt40{margin-top: 40px;}
+.mt45{margin-top: 45px;}
+.mt50{margin-top: 50px;}
+
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mr20{margin-right: 20px;}
+.mr25{margin-right: 25px;}
+.mr30{margin-right: 30px;}
+.mr35{margin-right: 35px;}
+.mr40{margin-right: 40px;}
+.mr45{margin-right: 45px;}
+.mr50{margin-right: 50px;}
+
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.mb25{margin-bottom: 25px;}
+.mb30{margin-bottom: 30px;}
+.mb35{margin-bottom: 35px;}
+.mb40{margin-bottom: 40px;}
+.mb45{margin-bottom: 45px;}
+.mb50{margin-bottom: 50px;}
+
+.ml10{margin-left: 10px;}
+.ml15{margin-left: 15px;}
+.ml20{margin-left: 20px;}
+.ml25{margin-left: 25px;}
+.ml30{margin-left: 30px;}
+.ml35{margin-left: 35px;}
+.ml40{margin-left: 40px;}
+.ml45{margin-left: 45px;}
+.ml50{margin-left: 50px;}
+
+/* padding */
+.pt10{padding-top: 10px;}
+.pt15{padding-top: 15px;}
+.pt20{padding-top: 20px;}
+.pt25{padding-top: 25px;}
+.pt30{padding-top: 30px;}
+.pt35{padding-top: 35px;}
+.pt40{padding-top: 40px;}
+.pt45{padding-top: 45px;}
+.pt50{padding-top: 50px;}
+
+.pl10{padding-left: 10px;}
+.pt15{padding-left: 15px;}
+.pl20{padding-left: 20px;}
+.pl25{padding-left: 25px;}
+.pl30{padding-left: 30px;}
+.pl35{padding-left: 35px;}
+.pl40{padding-left: 40px;}
+.pl45{padding-left: 45px;}
+.pl50{padding-left: 50px;}
+
+.pr10{padding-right: 10px;}
+.pr15{padding-right: 15px;}
+.pr20{padding-right: 20px;}
+.pr25{padding-right: 25px;}
+.pr30{padding-right: 30px;}
+.pr35{padding-right: 35px;}
+.pr40{padding-right: 40px;}
+.pr45{padding-right: 45px;}
+.pr50{padding-right: 50px;}
+
+.pb10{padding-bottom: 10px;}
+.pb15{padding-bottom: 15px;}
+.pb20{padding-bottom: 20px;}
+.pb25{padding-bottom: 25px;}
+.pb30{padding-bottom: 30px;}
+.pb35{padding-bottom: 35px;}
+.pb40{padding-bottom: 40px;}
+.pb45{padding-bottom: 45px;}
+.pb50{padding-bottom: 50px;}
