@@ -5,6 +5,10 @@ import './App.css';
 import './pages/MainPage'
 import MainPage from './pages/MainPage';
 
+import './style/scss/reset.scss'
+import './style/scss/common.scss'
+import './style/scss/color.scss'
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 library.add(faTrashAlt);
