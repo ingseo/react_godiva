@@ -23,21 +23,20 @@ function MobileNavi() {
                         </ul>
                     </div>
                     <div className="logo">
-                    <Link to="/"><img src={ require('../../assets/img/main/godiva_logomenu.png') } alt="고디바 로고" /></Link>
+                    <Link to="/"><img src={ require('../../assets/img/main/logo_footer.png') } alt="고디바 로고" /></Link>
+                    </div>
+                    <div className="mBtn">
+                        <div className="menuBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className="mBtn">
-                <div className="menuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-
             <div className="mMenu">
-            <div className="mMainMenu">
+                <div className="mMainMenu">
                     <ul className="downMenu">
                         <li className="list godivaManu">GODIVA MENU</li>
                         <li className="list online">ONLINE EXCLUSIVE</li>
@@ -71,7 +70,7 @@ function MobileNavi() {
                 </div>
                 <div className="subBottom">
                     <ul>
-                    <li><FontAwesomeIcon icon={faRotateLeft} className="icon"/><br /> BACK</li>
+                        <li><FontAwesomeIcon icon={faRotateLeft} className="icon"/><br /> BACK</li>
                         <li><FontAwesomeIcon icon={faMagnifyingGlass} className="icon"/><br /> SEARCH</li> 
                         <li><FontAwesomeIcon icon={faRightToBracket} className="icon"/><br /> LOGIN</li>
                     </ul>
