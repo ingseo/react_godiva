@@ -1,0 +1,12 @@
+@charset 'utf-8';
+@import '_utils';
+
+html{
+    font-size: 10px;
+
+    body{
+        a{
+            color: $main1;
+        }
+    }
+}

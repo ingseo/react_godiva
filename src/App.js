@@ -7,7 +7,6 @@ import MainPage from './pages/MainPage';
 
 import './style/scss/reset.scss'
 import './style/scss/common.scss'
-import './style/scss/color.scss'
 
 function App() {
   return (
