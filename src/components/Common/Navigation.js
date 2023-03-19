@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link, Route } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../../style/scss/navi.scss'
+
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 function Navigation() {
     return (
@@ -13,8 +16,7 @@ function Navigation() {
                         </Link>
                     </div>
                     <div className="right">
-                        <FontAwesomeIcon icon="fa-regular fa-magnifying-glass" className='icon' />
-                        <i className="fas fa-search"></i>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className='icon' fixedWidth/>
                         <div className="search">
                             <input type="text" />
                         </div>
