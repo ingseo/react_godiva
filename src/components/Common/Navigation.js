@@ -9,7 +9,7 @@ function Navigation() {
     return (
         <div className="navi">
             <div className="fixed">
-                <div className="navi_up">
+                <div className="naviUp">
                     <div className="logo">
                         <Link to="/">
                             <img src={ require('../../assets/img/main/godiva_logomenu.png') } alt="고디바 로고" />
@@ -20,16 +20,16 @@ function Navigation() {
                         <div className="search">
                             <input type="text" />
                         </div>
-                        <ul className="upmenu">
+                        <ul className="upMenu">
                             <li>로그인</li>
                             <li>최근 본 상품</li>
                             <li>CART</li>
                         </ul>
                     </div>
                 </div>
-                <div className="navi_down"></div>
-                <div className="menu_group">
-                    <ul className="downmenu">
+                <div className="naviDown"></div>
+                <div className="menuGroup">
+                    <ul className="downMenu">
                         <li className="list">
                             <Link to="/">GODIVA MENU</Link>    
                         </li>
@@ -43,9 +43,9 @@ function Navigation() {
                             <Link to="/">ABOUT GODIVA</Link>
                         </li>
                     </ul>
-                    <div className="submenu_group">
-                        <ul className="submenu">
-                            <div className="wrap godiva_menu">
+                    <div className="subMenuGroup">
+                        <ul className="subMenu">
+                            <div className="wrap godivaMenu">
                             <li><Link to="/">초콜릿│Chocolate</Link></li>
                             <li><Link to="/">음료│Beverage</Link></li>
                             <li><Link to="/">아이스크림│Icecream</Link></li>
@@ -54,7 +54,7 @@ function Navigation() {
                             </div>
                         </ul>
 
-                        <ul className="submenu">
+                        <ul className="subMenu">
                             <div className="wrap online">
                             <li><Link to="/">온라인몰│Online Shop</Link></li>
                             <li><Link to="/">시즌상품│Season Products</Link></li>
@@ -63,15 +63,15 @@ function Navigation() {
                             </div>
                         </ul>
 
-                        <ul className="submenu">
-                            <div className="wrap newsevent">
+                        <ul className="subMenu">
+                            <div className="wrap newsEvent">
                             <li><Link to="/">미디어│Press＆Magazine</Link></li>
                             <li><Link to="/">프로모션│Event</Link></li>
                             <li><Link to="/">공지사항│News</Link></li>
                             </div>
                         </ul>
 
-                        <ul className="submenu">
+                        <ul className="subMenu">
                             <div className="wrap about">
                             <li><Link to="/">고디바 스토리│Our Story</Link></li>
                             <li><Link to="/">고디바 매장│Our Stores</Link></li>
