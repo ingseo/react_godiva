@@ -76,17 +76,19 @@
 
         .container{
             margin: 0 6rem;
-
-            ul{
-                li{
-                    margin: 0.5rem 0;
-                    padding: 0;
-                }
-
-                &:nth-child(4){
-                    .iconGroup{
-                        li{
-                            padding-right: 3rem;
+            .row{
+                ul{
+                    width: 100%;
+                    li{
+                        margin: 0.5rem 0;
+                        padding: 0;
+                    }
+    
+                    &:nth-child(4){
+                        .iconGroup{
+                            li{
+                                padding-right: 3rem;
+                            }
                         }
                     }
                 }
