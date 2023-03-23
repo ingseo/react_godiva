@@ -18,6 +18,7 @@ $shadow: rgba(207,182,110,0.3);
 $mobileS: 580px;
 $mobileL: 640px;
 $tablet: 750px;
+$tabletL: 992px;
 $desktop: 1080px;
 $desktopBg: 1279px;
 
@@ -35,6 +36,12 @@ $desktopBg: 1279px;
 
 @mixin tablet{
     @media(max-width: $tablet){
+        @content;
+    }
+}
+
+@mixin tabletL{
+    @media(max-width: $tabletL){
         @content;
     }
 }

@@ -1,2 +1,126 @@
 @charset 'utf-8';
 @import '_utils';
+
+//contact
+.contact{
+    height: 100%; 
+    padding: 8rem 0; 
+    background: $main3;
+
+    .container{
+        font-family: 'Noto Sans KR';
+
+        .row{
+            display: flex;
+            justify-content: space-around;
+
+            @include tabletL{
+                display: block;
+            }
+
+            ul{
+                margin-bottom: 2rem;
+                
+
+                h5{
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                }
+
+                span{
+                    display: block; 
+                    width: 2rem; 
+                    height: 0.2rem; 
+                    background: $main1; 
+                    margin: 2rem 0;
+                }
+
+                li{
+                    margin: 0.5rem 0;
+                    padding: 0.5rem 0;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                }
+
+                &:nth-child(3){
+                    li{
+                        &:nth-child(5){
+                            margin-left: 1.5rem;
+                        }
+                        &:nth-child(6){
+                            margin-left: 1.5rem;
+                        }
+                    }
+                }
+
+                &:nth-child(4){
+                    .iconGroup{
+                        display: flex;
+
+                        li{
+                            margin: 0;
+                            padding-right: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//contact 미디어쿼리
+@include mobileL{
+    .contact{
+        padding: 4rem 0;
+
+        .container{
+            margin: 0 6rem;
+
+            ul{
+                li{
+                    margin: 0.5rem 0;
+                    padding: 0;
+                }
+
+                &:nth-child(4){
+                    .iconGroup{
+                        li{
+                            padding-right: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//footer
+.footer{
+    padding: 2rem 0; 
+    background: $main1;
+
+    .container{
+        .adress{
+            p{
+                margin: 0.5rem; 
+                color: $main3; 
+                font-size: 1.3rem
+            }
+        }
+    }
+
+    .top{
+        position: fixed; 
+        right: 2rem; 
+        bottom: 2rem; 
+        width: 5rem; 
+        border: 0.2rem solid $main2; 
+        color: $main2; 
+        background: none; 
+        border-radius: 0.5rem; 
+        z-index: 700;
+        cursor: pointer;
+    }
+}

@@ -8,5 +8,23 @@ html{
         a{
             color: $main1;
         }
+
+        .container{
+            max-width: 120rem;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: left;
+
+            @include desktopBg{
+                max-width: 97rem;
+            }
+
+            @include tabletL{
+                max-width: 72rem;
+            }
+
+        }
     }
 }

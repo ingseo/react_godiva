@@ -40,7 +40,7 @@ function Footer() {
                         <ul>
                             <h5>CONNECT WITH US</h5>
                             <span></span>
-                            <div className="icon">
+                            <div className="iconGroup">
                                 <li>
                                     <Link to="/">
                                         <img src={ require('../../assets/img/main/icon_facebook.png') } alt="페이스북" />
