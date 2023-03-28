@@ -5,13 +5,16 @@ import SliderComponent from './SliderComponent';
 import EventListCard from './EventListCard';
 import '../../style/scss/mainpage.scss'
 
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 function Contents() {
     return (
         <>
             <SliderComponent />
+
+            {/* 초콜렛 배경 */}
             <div className="chocoBg">
+                
                 {/* event */}
                 <div className="event">
                     <div className="container">
@@ -50,6 +53,223 @@ function Contents() {
                                 </ul>
                             </div>
                         </div>            
+                    </div>
+                </div>
+
+                {/* today's chocolate */}
+                <div className="today">
+                    <div className="container">
+                        <div className="left">
+                        <div className="text">
+                            <div className="point"><span></span></div>
+                            <div className="title">TODAY'S<br />CHOCOLATE</div>
+                            <div className="type">Chocolate with love</div>
+                            </div>
+                        </div>
+                        <input type="button" className="go" value="확인하기" />
+                        <div className="right">
+                            <div className="choco"><img src={ require('../../assets/img/main/chocolate-01.png') } alt="Tourbillon Ⅱ" /></div>
+                            <div className="contents">
+                                <div className="name">Tourbillon Ⅱ</div>
+                                <div className="ex">카카오 85%의 다크 초콜릿 가나슈가 들어간 다크초콜릿. 고디바의 시그니처 제품인 골드 컬렉션을 보다 더 모던하고 정교하게 업그레이드한 골드 디스커버리 제품.</div>
+                                <input type="button" className="btnMore" value="MORE" />
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+                {/* godiva menu */}
+                <div className="gMenu">
+                    <div className="container">
+                        <div className="box">
+                            <Link to="/">
+                            <div className="boxover box1">
+                                <img src={ require('../../assets/img/main/menu1.jpg') } alt="골드 컬렉션" />
+                                <div className="contents">
+                                    <h4>골드 컬렉션</h4>
+                                    <span></span>
+                                    <p>화려한 디자인과 다양한 맛의 고디바 시그니처 컬렉션</p>
+                                </div>
+                                <div className="over"></div>
+                            </div>
+                            </Link>
+                            <Link to="/">
+                            <div className="boxover box2">
+                                <img src={ require('../../assets/img/main/menu2.jpg') } alt="큐브 튀리프" />
+                                <div className="contents">
+                                    <h4>큐브 트뤼프</h4>
+                                    <span></span>
+                                    <p>다양한 식감과 뛰어난 풍미의 고급스러운 초콜릿</p>
+                                </div>
+                                <div className="over"></div>
+                            </div>
+                            </Link>
+                            <Link to="/">
+                            <div className="boxover box3">
+                                <span>G</span>
+                                <span>O</span>
+                                <span>D</span>
+                                <span>I</span>
+                                <span>V</span>
+                                <span>A</span>
+                                <span> </span>
+                                <span>M</span>
+                                <span>E</span>
+                                <span>N</span>
+                                <span>U</span>
+                            </div>
+                            </Link>
+                            <Link to="/">
+                            <div className="boxover box4">
+                                <img src={ require('../../assets/img/main/menu3.jpg') } alt="음료＆스낵" className="monitor" />
+                                <img src={ require('../../assets/img/main/m_menu3.jpg') } alt="음료＆스낵" className="mobail" />
+                                <div className="contents">
+                                    <h4>음료＆디저트</h4>
+                                    <span></span>
+                                    <p>고디바 프리미엄 디저트와 스페셜티, 원두 로스팅 커피 그리고 코코아</p>
+                                </div>
+                                <div className="over"></div>
+                            </div>
+                            </Link>
+                            <Link to="/">
+                            <div className="boxover box5">
+                                <img src={ require('../../assets/img/main/menu4.jpg') }alt="아이스크림" className="monitor" />
+                                <img src={ require('../../assets/img/main/m_menu4.jpg') } alt="음료＆스낵" className="mobail" />
+                                <div className="contents">
+                                    <h4>아이스크림</h4>
+                                    <span></span>
+                                    <p>부드러운 텍스처의 깊고 진한 아이스크림</p>
+                                </div>
+                                <div className="over"></div>
+                            </div>
+                            </Link>
+                            <Link to="/">
+                            <div className="boxover box6">
+                                <img src={ require('../../assets/img/main/menu5.jpg') } alt="초콜렉사" className="monitor" />
+                                <img src={ require('../../assets/img/main/m_menu5.jpg') } alt="초콜렉사" className="mobail" />
+                                <div className="contents">
+                                    <h4>초콜렉사</h4>
+                                    <span></span>
+                                    <p>초콜릿을 직접갈아만든 고디바 리얼 초콜릿 음료</p>
+                                </div>
+                                <div className="over"></div>
+                            </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* 매장배너*/}
+            <div className="store">
+                <Link to="/">
+                    <div className="container">
+                        <div className="iceImg"><img src={ require('../../assets/img/main/ice.png') } alt="아이스크림" /></div>
+                        <div className="text">
+                            <div className="title"><span>매장에서만 만날 수 있는 </span>달콤한 맛</div>
+                            <div className="type">Sweet Place</div>
+                        </div>
+                        <input type="button" value="매장찾기" />
+                    </div>
+                </Link>
+            </div>
+
+            {/* 인스타그램 */}
+            <div className="insta">
+                <div className="instaGroup">
+                    <Link to="https://www.instagram.com/godivakorea/?hl=ko">
+                        <div className="box box1">
+                            <img src={ require('../../assets/img/main/insta1.jpg') } alt="인스타그램" />
+                            <div className="imgText">
+                                <div className="heart"><FontAwesomeIcon icon={faHeart} className="icon"/> 20314</div>
+                                <div className="type">#고디바 #고디바초콜릿 #코디바화이트데이 #화이트데이초콜릿 #화이트데이 #완벽한고백 #화이트데이 선물 #여자친구선물 #고디바퍼펙트페어링컬렉션 #godiva #godivachocolate #WonderAwaits</div>
+                                <div className="mType">#고디바화이트데이</div>
+                            </div>
+                            <div className="backColor"></div>
+                        </div>
+                    </Link>
+                    <Link to="https://www.instagram.com/godivakorea/?hl=ko">
+                        <div className="box box2">
+                            <img src={ require('../../assets/img/main/insta2.jpg') } alt="인스타그램" />
+                            <div className="imgText">
+                                <div className="heart"><FontAwesomeIcon icon={faHeart} className="icon"/> 20214</div>
+                                <div className="type">#고디바 #고디바초콜릿 #고디바발렌타인데이 #발렌타인데이초콜릿 #발렌타인데이 #발렌타인데이선물 #남자친구선물 선물 #남자친구선물 #고디바크로니클컬렉션 #godiva #godivachocolate #WonderAwaits</div>
+                                <div className="mType">#고디바발렌타인데이</div>
+                            </div>
+                            <div className="backColor"></div>
+                        </div>
+                    </Link>
+                    <div className="box box3">
+                        <div>SHOW US<br />HOW YOU<br />SHARE<br />THE LOVE<br />#GODIVA</div>
+                    </div>
+                    <Link to="https://www.instagram.com/godivakorea/?hl=ko">
+                        <div className="box box4">
+                            <img src={ require('../../assets/img/main/insta3.jpg') } alt="인스타그램" />
+                            <div className="imgText">
+                                <div className="heart"><FontAwesomeIcon icon={faHeart} className="icon"/> 22</div>
+                                <div className="type">#고디바 #고디바골드컬렉션 #프리미엄벨기에초콜릿 #godiva #godivachocolate</div>
+                                <div className="mType">#고디바골드컬렉션</div>
+                            </div>
+                            <div className="box backColor"></div>
+                        </div>
+                    </Link>
+                    <Link to="https://www.instagram.com/godivakorea/?hl=ko">
+                        <div className="box box5">
+                            <img src={ require('../../assets/img/main/insta4.jpg') }alt="인스타그램" />
+                            <div className="imgText">
+                                <div className="heart"><FontAwesomeIcon icon={faHeart} className="icon"/> 2691</div>
+                                <div className="type">@godiva Our Signature Coffee Blend is made from perfectly roasted Arabica beans, sourced from thr finest growing regions in the world. Treat yourself to its exceptional, full-bodied flavor at any GODIVA Cafe.</div>
+                                <div className="mType">#godivacafe</div>
+                            </div>
+                            <div className="backColor"></div>
+                        </div>
+                    </Link>
+                    <Link to="https://www.instagram.com/godivakorea/?hl=ko">
+                        <div className="box box6">
+                            <img src={ require('../../assets/img/main/insta5.jpg') } alt="인스타그램" />
+                            <div className="imgText">
+                                <div className="heart"><FontAwesomeIcon icon={faHeart} className="icon"/> 109</div>
+                                <div className="type">고디바가 벨기에 왕실 인증 초콜릿 브랜드로서 자랑스러운 50주년을 맞이하게 되었습니다! 왕실 인증 브랜드로서 50주년은 벨기에 최고의 독창성과 정교한 장인의 솜씨를 세계에 선사하겠다는 고디바의 신념을 성공적으로 이뤄왔다는 것을 의미합니다.</div>
+                                <div className="mType">#GODIVA50주년</div>
+                            </div>
+                            <div className="backColor"></div>
+                        </div>
+                    </Link>
+                    <Link to="https://www.instagram.com/godivakorea/?hl=ko">
+                        <div className="box box7">
+                            <img src={ require('../../assets/img/main/insta6.jpg') } alt="인스타그램" />
+                            <div className="imgText">
+                                <div className="heart"><FontAwesomeIcon icon={faHeart} className="icon"/> 150</div>
+                                <div className="type">@godiva NEW GODIVA Cube Truffles. Four luxurious layers of flavor. Exquisite inside ＆ out.</div>
+                                <div className="mType">#CubeTruffles</div>
+                            </div>
+                            <div className="backColor"></div>
+                        </div>
+                    </Link>
+                    <Link to="https://www.instagram.com/godivakorea/?hl=ko">
+                        <div className="box box8">
+                            <img src={ require('../../assets/img/main/insta7.jpg') } alt="인스타그램" />
+                            <div className="imgText">
+                                <div className="heart"><FontAwesomeIcon icon={faHeart} className="icon"/> 11</div>
+                                <div className="type">@godiva The best way to celebrate #NationalStrawberryDay ? By covering them in GODIVA chocolate. Check out our stories for a special! treat!</div>
+                                <div className="mType">#StrawberryDay</div>
+                            </div>
+                            <div className="backColor"></div>
+                        </div>
+                    </Link>
+                    <div className="box box9">
+                        <div>#GODIVA<br />#LOVESTAGRAM<br /></div>
+                    </div>
+                </div>
+            </div>
+
+            {/* email */}
+            <div className="email">
+                <div className="container">
+                    <input placeholder="Type to your e-mail adress" />
+                    <div className="sign">
+                        <input type="submit" value="sign" />
+                        <div><span></span></div>
                     </div>
                 </div>
             </div>
