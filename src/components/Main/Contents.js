@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link, Route } from "react-router-dom";
 import SliderComponent from './SliderComponent';
-import EventListCard from './EventListCard';
 import SubTitle from './SubTitle';
+import EventList from './EventList';
+import EventListCard from './EventListCard';
 import MenuCard from './MenuCard';
 import InstagramCard from './InstagramCard';
 import '../../style/scss/mainpage.scss'
@@ -20,14 +21,7 @@ function Contents() {
                     <div className="container">
                         <div className="left">
                             <SubTitle />
-                            <ul className="list">
-                                <li>2020 스프링 앙샹뜨 컬렉션<br />
-                                    Spring Enchanteur Collection </li>
-                                <li>고디바 회원만의 특별한 혜택<br />
-                                    GODIVA MAMBERSHIP</li>
-                                <li>프리미엄 컵 아이스크림<br />
-                                    Premium Cup Ice Cream</li>
-                            </ul>
+                            <EventList />
                         </div>
                         <div className="right">
                             <div className="cardGroup">
@@ -39,14 +33,7 @@ function Contents() {
                                 <EventListCard />
                                 <EventListCard />
                                 <EventListCard />
-                                <ul className="mList">   
-                                    <li>2020 스프링 앙샹뜨 컬렉션<br />
-                                        Spring Enchanteur Collection </li>
-                                    <li>고디바 회원만의 특별한 혜택<br />
-                                        GODIVA MAMBERSHIP</li>
-                                    <li>프리미엄 컵 아이스크림<br />
-                                        Premium Cup Ice Cream</li>
-                                </ul>
+                                <EventList />
                             </div>
                         </div>            
                     </div>
