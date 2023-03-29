@@ -9,7 +9,6 @@ import InstagramCard from './InstagramCard';
 import '../../style/scss/mainpage.scss'
 
 function Contents() {
-
     return (
         <>
             <SliderComponent />
@@ -31,9 +30,21 @@ function Contents() {
                                         <img src={ require('../../assets/img/main/event_imegeLogo.png') } alt="고디바 로고" /> 
                                     </div>
                                 </div>
-                                <EventListCard />
-                                <EventListCard />
-                                <EventListCard />
+                                <EventListCard 
+                                    img={<img src={ require('../../assets/img/main/event1.png') } 
+                                        alt="2020 스프링 앙샹뜨 컬렉션" />}
+                                    back={<>2020 스프링 앙샹뜨 컬렉션<br />Spring Enchanteur Collection</>}
+                                />
+                                <EventListCard 
+                                    img={<img src={ require('../../assets/img/main/event2.png') } 
+                                        alt="고디바 회원만의 특별한 혜택" />}
+                                    back={<>고디바 회원만의 특별한 혜택<br />GODIVA MAMBERSHIP</>}
+                                />
+                                <EventListCard 
+                                    img={<img src={ require('../../assets/img/main/event3.png') } 
+                                        alt="프리미엄 컵 아이스크림" />}
+                                    back={<>프리미엄 컵 아이스크림<br />Premium Cup Ice Cream</>}
+                                />
                                 <EventList />
                             </div>
                         </div>            
