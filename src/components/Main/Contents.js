@@ -9,6 +9,7 @@ import InstagramCard from './InstagramCard';
 import '../../style/scss/mainpage.scss'
 
 function Contents() {
+
     return (
         <>
             <SliderComponent />
@@ -20,7 +21,7 @@ function Contents() {
                 <div className="event">
                     <div className="container">
                         <div className="left">
-                            <SubTitle />
+                            <SubTitle title={'EVENT LIST'} type={'Sweet pleasure'}/>
                             <EventList />
                         </div>
                         <div className="right">
@@ -43,7 +44,7 @@ function Contents() {
                 <div className="today">
                     <div className="container">
                         <div className="left">
-                            <SubTitle />
+                            <SubTitle title={<>TODAY'S<br/>CHOCOLATE</>} type={'Chocolate with love'}/>
                         </div>
                         <input type="button" className="go" value="확인하기" />
                         <div className="right">
