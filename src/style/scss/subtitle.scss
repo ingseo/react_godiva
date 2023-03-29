@@ -1,0 +1,37 @@
+@charset 'utf-8';
+@import '_utils';
+
+//main sub title
+.text{
+    .point{
+        span{
+            display: block; 
+            width: 4.5rem; 
+            height: 0.8rem; 
+            margin-bottom: 1rem;
+            background: $red;
+        }
+    }
+
+    .title{
+        font-family: 'Nunito Sans'; 
+        font-size: 5rem; 
+        font-weight: 900; 
+        color: $main1;
+    }
+
+    .type{
+        font-family: 'Parisienne'; 
+        font-size: 4.2rem; 
+        color: $main2; 
+        top: -1rem;
+    }
+}
+
+.today{
+    .text{
+        .type{
+            color: $main3;
+        }
+    }
+}
