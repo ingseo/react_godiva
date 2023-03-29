@@ -1,2 +1,119 @@
 @charset 'utf-8';
 @import '_utils';
+
+//background
+.chocoBg{
+    background-image: url(../../assets/img/main/choco_bg2.png); 
+    background-color: $main3; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+@include desktopBg{
+    .chocoBg{
+        background-image:none;
+    }
+}
+
+//event
+.event{
+    height: 100vh;
+    min-height: 60rem;
+
+    .container{
+        display: flex; 
+        top: calc(50% - 22.5rem); 
+        padding: 0;
+        font-family: 'Noto Sans KR';
+
+        &>div{
+            flex: 1;
+        }
+
+        .left{
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            height: 45rem; 
+            color: $main1;
+            //.text부터는 subtitle.scss
+
+            .list{
+                width: 27rem;
+                font-size: 1.7rem; 
+                font-weight: bold; 
+                
+                li{
+                    padding: 1rem 0; 
+                    margin: 1rem 0; 
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .right{
+            .cardGroup{
+                display: flex;
+                //.card부터는 card.scss
+
+                //모바일 리스트
+                .list{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//event 미디어쿼리
+@include desktop{
+    .event{
+        height: 100%;
+
+        .container{
+            flex-direction: column; 
+            padding: 10rem 4rem;
+
+            .left{
+                margin-bottom: 3rem;
+
+                .list{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include mobileL{
+    .event{
+        padding: 5rem 0;
+
+        .container{
+            padding: 6rem 4rem;
+
+            .right{
+                .cardGroup{
+                    flex-wrap: wrap;
+
+                    .list{
+                        display: flex;
+                        flex-direction: column; 
+                        justify-content: center;
+                        width: 50%; 
+                        margin-bottom: 0; 
+                        font-size: 2.5vw; 
+                        font-weight: bold; 
+                        
+                        li{
+                            padding: 1rem 1rem; 
+                            margin: 0.5rem 1rem; 
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,142 @@
+@charset 'utf-8';
+@import '_utils';
+
+//event card
+.event{
+    .cardGroup{
+        .card{
+            position: absolute; 
+            top: 0;
+            perspective: 150rem; 
+            transform: rotate(0deg); 
+            transition: 1s;
+
+            &:not(.logo){
+                width: 40rem;
+                height: 45rem;
+            }
+
+            .wrap{ 
+                position: absolute;
+                right: 0; 
+                transform-style: preserve-3d; 
+                transition: 1s; 
+                cursor: pointer;
+
+                .back{
+                    position: absolute; 
+                    top: 0; 
+                    display: flex; 
+                    flex-direction: column; 
+                    align-items: center;
+                    justify-content: center; 
+                    width: 100%; 
+                    height: 100%;
+                    padding: 2rem; 
+                    background: $main1; 
+                    color: $main2; 
+                    border-radius: 1.5rem;
+                    transform: rotateY(180deg); 
+                    text-align: center; 
+                    font-size: 1.7rem; 
+                    backface-visibility: hidden;
+
+                    span{
+                        width: 10rem; 
+                        padding: 0.5rem; 
+                        margin-top: 1rem;
+                        border: 0.2rem solid $main2; 
+                    }
+                }
+            }
+
+            &:nth-child(1){
+                right: calc(20vw + 52rem); 
+                top: 30rem; 
+                transform: rotateY(180deg); 
+                z-index: 30; 
+                cursor: auto;
+
+                img{
+                    width: auto;
+                }
+            }
+
+            &:nth-child(2){
+                right: 20vw;
+                z-index: 20; 
+            }
+
+            &:nth-child(3){
+                right: 10vw;
+                z-index: 10; 
+            }
+
+            &:nth-child(4){
+                right: 0;
+            }
+
+            &:hover{
+                &:not(.logo){
+                    z-index: 50; 
+                    transform: rotate(5deg);
+
+                    .wrap{
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+
+            // addclass
+            .hover{
+                z-index: 50 !important; 
+                transform: rotate(5deg) !important;
+
+                .wrap{
+                    transform: rotateY(180deg)
+                }
+            }
+        }
+    }
+}
+
+//event 미디어쿼리
+@include desktop{
+    .event{
+        .cardGroup{
+            .card{
+                position: relative;
+                right: 0 !important; 
+                width: 33.3%; 
+                height: auto !important;
+
+                .wrap{
+                    position: relative;
+
+                    img{
+                        width: 100%;
+                    }
+
+                    .back{
+                        font-size: 1.5rem;
+                    }
+
+                }
+
+                &:nth-child(1){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include mobileL{
+    .event{
+        .cardGroup{
+            .card{
+                width: 50% !important;
+            }
+        }
+    }
+}

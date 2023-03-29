@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { Link, Route } from "react-router-dom";
+import '../../style/scss/card.scss'
 
 function MenuCard(props) {
     return (
