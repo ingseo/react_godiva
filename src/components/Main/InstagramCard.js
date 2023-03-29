@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Route } from "react-router-dom";
+import '../../style/scss/card.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
