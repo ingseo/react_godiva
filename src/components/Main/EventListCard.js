@@ -1,6 +1,10 @@
 import React from 'react'
 
-function EventListCard() {
+function EventListCard(props) {
+
+  const {img} = props;
+  const {back} = props;
+
   return (
     <div className="card">    
         <div className="wrap">
