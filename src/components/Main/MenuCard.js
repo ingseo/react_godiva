@@ -1,15 +1,17 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
 import { Link, Route } from "react-router-dom";
 
-function MenuCard() {
+function MenuCard(props) {
     return (
         <Link to="/">
-            <div className="boxover box1">
-                <img src={ require('../../assets/img/main/menu1.jpg') } alt="골드 컬렉션" />
+            <div className="boxover">
+                {props.img}
+                {props.mImg}
                 <div className="contents">
-                    <h4>골드 컬렉션</h4>
+                    <h4>{props.name}</h4>
                     <span></span>
-                    <p>화려한 디자인과 다양한 맛의 고디바 시그니처 컬렉션</p>
+                    <p>{props.value}</p>
                 </div>
                 <div className="over"></div>
             </div>
