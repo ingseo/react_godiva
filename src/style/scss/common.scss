@@ -9,6 +9,10 @@ html{
             color: $main1;
         }
 
+        button, input[type=button], input[type=reset], input[type=submit]{
+            cursor: pointer;
+        }
+
         .container{
             max-width: 120rem;
             padding-right: 1.5rem;
