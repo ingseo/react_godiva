@@ -46,15 +46,15 @@ function SliderCompont() {
         <div className="container">
             <div className="title"><span>Regular</span><br /><span>events</span></div>
             <Slider {...settingsRegular} className="regularSlider">
-              <ul className="event">
+              <ul className="rEvent">
                   <li><span>#고디바챌린지 </span>#해시태그이벤트</li> 
                   <li>#카카오톡친구추가 <span>#무료배송쿠폰</span></li>
               </ul>
-              <ul className="event">
+              <ul className="rEvent">
                   <li>#고디바신규가입 <span>#5000원쿠폰</span></li>
                   <li>#고디바회원가입 <span>#1000포인트적립</span> #개이득</li>
               </ul>
-              <ul className="event">
+              <ul className="rEvent">
                   <li><span>#3만원무료배송 </span> #친구선물 #가족선물</li> 
                   <li>#애인선물 #사실내선물 <span>#맛스타그램</span></li>
               </ul>
