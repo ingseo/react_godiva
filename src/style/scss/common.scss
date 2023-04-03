@@ -32,3 +32,9 @@ html{
         }
     }
 }
+
+@include mobileS{
+    html{
+        font-size: 8px;
+    }
+}
