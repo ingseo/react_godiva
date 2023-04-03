@@ -636,3 +636,110 @@
         }
     }
 }
+
+//매장찾기 배너
+.store{
+    height: 11rem;
+    background-color: $main1;
+
+    .container{
+        display: flex; 
+        align-items: center;
+        height: 100%;
+
+        .iceImg{
+            height: 11rem;
+
+            img{
+                display: block;
+                height: 100%;
+            }
+        }
+
+        .text{
+            flex: 1;
+                text-align: center;
+
+            .title{
+                color: $main3; 
+                font-size: 2.8rem; 
+                font-weight: bold; 
+                top:1.5rem; 
+                right: 6rem;
+                font-family: 'Noto Sans KR';
+
+                span{
+                    color: $main3;
+                    font-weight: 100;
+                }
+            }
+            .type{
+                left: 12rem;
+                top: -1rem
+            }
+        }
+
+        input{
+            background: none; 
+            color: $main3; 
+            padding: 1.5rem 2.5rem; 
+            font-size: 1.4rem; 
+            border: 0.2rem solid $main3;
+        }
+    }
+}
+
+@include desktop{
+    .store{
+        .container{
+            padding: 0 4rem;
+
+            .iceImg{
+                display: flex;
+                align-items: flex-end;
+
+                img{
+                    height: 90%;
+                }
+            }
+
+            .text{
+                .title{
+                    right: 3rem;
+                    top: 1rem;
+                    font-size: 2rem;
+                }
+
+                .type{
+                    left: 9rem;
+                    top: -1rem;
+                    font-size: 3rem;
+                }
+
+            }
+        }
+    }
+}
+
+@include mobileL{
+    .store{
+        .container{
+            .text{
+                .title{
+                    right: 0;
+                    top: 0.5rem;
+                    font-size: 1.7rem;
+                }
+                .type{
+                    left: 0;
+                    top: -1rem;
+                    font-size: 2rem;
+                }
+            } 
+
+            input{
+                display: none;
+            }
+        }
+    }
+}
