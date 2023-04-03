@@ -6,8 +6,8 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 function InstagramCard(props) {
     return (
-        <Link to={props.link}>
-            <div className="box">
+        <Link to={props.link} className="box">
+            <div className="boxWrap">
                 {props.img}
                 <div className="imgText">
                     <div className="heart"><FontAwesomeIcon icon={faHeart} className="icon"/> 20314</div>
