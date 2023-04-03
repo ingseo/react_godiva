@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../style/scss/card.scss'
 
 function EventListCard(props) {
   return (
