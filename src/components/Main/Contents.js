@@ -46,19 +46,19 @@ function Contents() {
         value: '다양한 식감과 뛰어난 풍미의 고급스러운 초콜릿',
     }
     const menuProps3 = {
-        img: <img src={ require('../../assets/img/main/menu3.jpg') } alt="음료＆디저트" />,
+        img: <img src={ require('../../assets/img/main/menu3.jpg') } alt="음료＆디저트"  className='desktop'/>,
         mImg: <img src={ require('../../assets/img/main/m_menu3.jpg') } alt="음료＆디저트"  className='mobile'/>,
         name: '음료＆디저트', 
         value: '고디바 프리미엄 디저트와 스페셜티, 원두 로스팅 커피 그리고 코코아',
     }
     const menuProps4 = {
-        img: <img src={ require('../../assets/img/main/menu4.jpg') } alt="아이스크림" />,
+        img: <img src={ require('../../assets/img/main/menu4.jpg') } alt="아이스크림" className='desktop'/>,
         mImg: <img src={ require('../../assets/img/main/m_menu4.jpg') } alt="아이스크림"  className='mobile'/>,
         name: '아이스크림', 
         value: '부드러운 텍스처의 깊고 진한 아이스크림',
     }
     const menuProps5 = {
-        img: <img src={ require('../../assets/img/main/menu5.jpg') } alt="초콜렉사" />,
+        img: <img src={ require('../../assets/img/main/menu5.jpg') } alt="초콜렉사" className='desktop'/>,
         mImg: <img src={ require('../../assets/img/main/m_menu5.jpg') } alt="초콜렉사" className='mobile'/>,
         name: '초콜렉사', 
         value: '초콜릿을 직접갈아만든 고디바 리얼 초콜릿 음료',
