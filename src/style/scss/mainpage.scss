@@ -54,7 +54,100 @@
         .right{
             .cardGroup{
                 display: flex;
-                //.card부터는 card.scss
+                
+                .card{
+                    position: absolute; 
+                    top: 0;
+                    perspective: 150rem; 
+                    transform: rotate(0deg); 
+                    transition: 1s;
+        
+                    &:not(.logo){
+                        width: 40rem;
+                        height: 45rem;
+                    }
+        
+                    .wrap{ 
+                        position: absolute;
+                        right: 0; 
+                        transform-style: preserve-3d; 
+                        transition: 1s; 
+                        cursor: pointer;
+        
+                        .back{
+                            position: absolute; 
+                            top: 0; 
+                            display: flex; 
+                            flex-direction: column; 
+                            align-items: center;
+                            justify-content: center; 
+                            width: 100%; 
+                            height: 100%;
+                            padding: 2rem; 
+                            background: $main1; 
+                            color: $main2; 
+                            border-radius: 1.5rem;
+                            transform: rotateY(180deg); 
+                            text-align: center; 
+                            font-size: 1.7rem; 
+                            backface-visibility: hidden;
+        
+                            span{
+                                width: 10rem; 
+                                padding: 0.5rem; 
+                                margin-top: 1rem;
+                                border: 0.2rem solid $main2; 
+                            }
+                        }
+                    }
+        
+                    &:nth-child(1){
+                        right: calc(20vw + 52rem); 
+                        top: 30rem; 
+                        transform: rotateY(180deg); 
+                        z-index: 30; 
+                        cursor: auto;
+        
+                        img{
+                            width: auto;
+                        }
+                    }
+        
+                    &:nth-child(2){
+                        right: 20vw;
+                        z-index: 20; 
+                    }
+        
+                    &:nth-child(3){
+                        right: 10vw;
+                        z-index: 10; 
+                    }
+        
+                    &:nth-child(4){
+                        right: 0;
+                    }
+        
+                    &:hover{
+                        &:not(.logo){
+                            z-index: 50; 
+                            transform: rotate(5deg);
+        
+                            .wrap{
+                                transform: rotateY(180deg);
+                            }
+                        }
+                    }
+        
+                    // addclass
+                    .hover{
+                        z-index: 50 !important; 
+                        transform: rotate(5deg) !important;
+        
+                        .wrap{
+                            transform: rotateY(180deg)
+                        }
+                    }
+                }
 
                 //모바일 리스트
                 .list{
@@ -81,6 +174,34 @@
                     display: none;
                 }
             }
+
+            .right{
+                .cardGroup{
+                    .card{
+                        position: relative;
+                        right: 0 !important; 
+                        width: 33.3%; 
+                        height: auto !important;
+        
+                        .wrap{
+                            position: relative;
+        
+                            img{
+                                width: 100%;
+                            }
+        
+                            .back{
+                                font-size: 1.4rem;
+                            }
+        
+                        }
+        
+                        &:nth-child(1){
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -95,6 +216,10 @@
             .right{
                 .cardGroup{
                     flex-wrap: wrap;
+
+                    .card{
+                        width: 50% !important;
+                    }
 
                     .list{
                         display: flex;
@@ -252,5 +377,199 @@
                 margin: 2rem auto;
             }
         }
+    }
+}
+
+//godiva menu
+
+.gMenu{
+    display: flex; 
+    align-items: center;
+    height: 100vh; 
+    min-height: 60rem; 
+
+    .container{
+        display: flex; 
+        align-items: center; 
+        height: 100%; 
+        padding: 0; 
+        font-family: 'Noto Sans KR'; 
+
+        .box{
+            display: grid; 
+            grid-template-columns: repeat(6,auto); 
+            grid-template-rows: repeat(3, auto); 
+            margin: 0 auto;
+            max-width: 120rem; 
+
+            a{
+                &:not(:nth-child(3)){
+                    max-height: 24rem;
+                    overflow: hidden; 
+                    cursor: pointer;
+                }
+
+                &:nth-child(1){
+                    grid-column: 1/4; 
+                    grid-row: 1/2
+                }
+
+                &:nth-child(2){
+                    grid-column: 4/7; 
+                    grid-row: 1/2
+                }
+
+                &:nth-child(3){
+                    grid-column: 1/7; 
+                    grid-row: 2/3;
+                    text-align: center; 
+                    font-family: 'Nunito Sans'; 
+                    font-weight: 900; 
+                    font-size: 5rem;
+                    color: $main1; 
+
+                    .menuTitle{
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center;
+
+                        span{
+                            &:nth-child(7){
+                                width: 1rem;
+                                height: 4rem;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(4){
+                    grid-column: 1/3; 
+                    grid-row: 3/4;
+                }
+
+                &:nth-child(5){
+                    grid-column: 3/5; 
+                    grid-row: 3/4;
+                }
+
+                &:nth-child(6){
+                    grid-column: 5/7; 
+                    grid-row: 3/4;
+                }
+
+                &:hover{
+                    img{
+                        transform: scale(1.2)
+                    }
+
+                    .contents{
+                        top:calc(100% - 10rem);
+                    }
+
+                    .over{
+                        top:0;
+                    }
+                } 
+                
+            }
+
+            .boxover{
+                img{
+                    display: block; 
+                    width: 100%; 
+                    transform: scale(1); 
+                    transition: 0.5s
+                }
+    
+                .contents{
+                    position: absolute; 
+                    top: calc(100% - 5rem); 
+                    color: $white; 
+                    padding: 0 1.5rem; 
+                    z-index: 10; 
+                    transition: 0.5s;
+
+                    h4{
+                        font-size: 1.7rem;
+                        font-weight: 500;
+                        line-height: 1.1;
+                        margin: 1rem 0;
+                    }
+
+                    span{
+                        display: block; 
+                        width: 5rem; 
+                        height: 0.2rem; 
+                        background: $white; 
+                        margin-bottom: 1rem;
+                    }
+
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+    
+                .mobile{
+                    display: none;
+                }
+    
+                .over{
+                    position: absolute; 
+                    top: 100%;
+                    width: 100%; 
+                    height: 100%; 
+                    background: $main1; 
+                    opacity: 0.9;
+                }
+            }
+
+            &:hover{
+                a{
+                    &:nth-child(3){
+                        span{
+                            &:nth-child(1){
+                                @include animation(0s, 2s,view);
+                            }
+                            &:nth-child(2){
+                                @include animation(0.2s, 2s, view);
+                            }
+                            &:nth-child(3){
+                                @include animation(0.9s, 2s, view);
+                            }
+                            &:nth-child(4){
+                                @include animation(0.1s,2s, view);
+                            }
+                            &:nth-child(5){
+                                @include animation(0.7s, 2s, view);
+                            }
+                            &:nth-child(6){
+                                @include animation(0.6s, 2s, view);
+                            }
+                            &:nth-child(8){
+                                @include animation(0.4s, 2s, view);
+                            }
+                            &:nth-child(9){
+                                @include animation(0.3s, 2s, view);
+                            }
+                            &:nth-child(10){
+                                @include animation(0.8s, 2s, view);
+                            }
+                            &:nth-child(11){
+                                @include animation(0.5s, 2s, view);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include keyframe (view) {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

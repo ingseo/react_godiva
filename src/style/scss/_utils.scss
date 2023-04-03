@@ -58,6 +58,17 @@ $desktopBg: 1279px;
     }
 }
 
-
+//keyframe{
+@mixin animation ($delay, $duration, $name) {
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $name
+}
+    
+@mixin keyframe ($animation_name) {
+    @keyframes #{$animation_name} {
+        @content;
+    }
+}
 
 
