@@ -4,6 +4,10 @@ import logo from './logo.svg';
 import './App.css';
 import './pages/MainPage'
 import MainPage from './pages/MainPage';
+import MenuPage from './pages/MenuPage';
+import OnlinePage from './pages/OnlinePage'
+import NewsPage from './pages/NewsPage'
+import AboutPage from './pages/AboutPage'
 
 import './style/scss/reset.scss'
 import './style/scss/common.scss'
@@ -12,7 +16,11 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <MainPage />
+        {/* <MainPage /> */}
+        <MenuPage />
+        {/* <OnlinePage /> */}
+        {/* <NewsPage /> */}
+        {/* <AboutPage /> */}
       </div>
     </BrowserRouter>
   );
