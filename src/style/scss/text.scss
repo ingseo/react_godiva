@@ -1,0 +1,88 @@
+@charset 'utf-8';
+@import '_utils';
+
+//main page sub title
+.text{
+    .point{
+        span{
+            display: block; 
+            width: 4.5rem; 
+            height: 0.8rem; 
+            margin-bottom: 1rem;
+            background: $red;
+        }
+    }
+
+    .title{
+        font-family: 'Nunito Sans'; 
+        font-size: 5rem; 
+        font-weight: 900;
+        line-height: 6rem; 
+        color: $main1;
+    }
+
+    .type{
+        font-family: 'Parisienne'; 
+        font-size: 4.2rem; 
+        color: $main2; 
+    }
+}
+
+.today{
+    .text{
+        .type{
+            color: $main3;
+        }
+    }
+}
+
+//sub page sub title
+.subText{
+    .point{
+        span{
+            top: -4rem;
+            display: block; 
+            width: 12rem; 
+            height: 0.2rem; 
+            margin-bottom: 1rem; 
+            background: $red; 
+        }
+    }
+    
+    .title{
+        font-size: 7rem; 
+        color: $main1; 
+        font-weight: bold;
+        z-index: 10; 
+    }
+
+    .type{
+        top: -4rem;
+        font-size: 5.6em; 
+        font-family: 'Parisienne'; 
+        color: $main4; 
+    }
+    
+    .ex{
+        font-size: 1.7rem;
+        top: -3rem;
+    }
+
+    .deialisBtn{
+        top: -1rem; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 20rem; 
+        height: 4.5rem; 
+        border: 0.1rem solid $main1; 
+        border-radius: 0; 
+        font-size: 1.7rem;
+        transition: 0.3s;
+
+        &:hover{
+            color: $main3;
+            background-color: $main1;
+        }
+    }
+} 

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../style/scss/subtitle.scss'
+import '../../style/scss/text.scss'
 
 function SubTitle(props) {
 
