@@ -9,6 +9,7 @@ function SubVisual(props) {
                 <div className="type">{props.type}</div>
             </div>
             {props.subGroup}
+            {props.under}
         </div>
     )
 }
