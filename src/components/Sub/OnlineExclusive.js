@@ -39,7 +39,7 @@ function OnlineExclusive() {
   }
 
   return (
-    <>
+    <div className='onlineExclusive'>
       {/* visual */}
       <SubVisual {...OnlineSubVisual}/>
       {/* banner */}
@@ -70,7 +70,7 @@ function OnlineExclusive() {
           <p className="p3"></p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
