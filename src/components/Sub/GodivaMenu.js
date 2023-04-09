@@ -34,6 +34,7 @@ function GodivaMenu() {
     bannerText: <>MD추천<br />오늘의 초콜릿 보러가기</>,
     img: <img src={ require('../../assets/img/sub_menu/choco.png') } alt="오늘의초콜릿" />,
     icon: <FontAwesomeIcon icon={faCircleArrowRight} className="icon"/>,
+    btn: '자세히보기',
   }
 
   //contentBox props
@@ -71,6 +72,7 @@ function GodivaMenu() {
         <SubBanner {...doubleBanner1} />
         <SubBanner {...doubleBanner2} />
       </div>
+      {/* list */}
       <div className='menuList'>
         <ContentsBox {...ContentBox1}/>
         <ContentsBox {...ContentBox2}/>

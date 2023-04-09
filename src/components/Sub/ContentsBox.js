@@ -11,7 +11,7 @@ export default function ContentsBox(props) {
                 <div className="type">{props.type}</div>
                 <div className="point"><span></span></div>
                 <div className="ex">{props.ex}</div>
-                <Link to="/"><div className="deialisBtn">자세히 보기</div></Link>
+                <Link to="/"><div className="deialisBtn">{props.btn}</div></Link>
             </div>
         </div>
     )
