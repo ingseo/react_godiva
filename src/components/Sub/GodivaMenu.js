@@ -64,7 +64,7 @@ function GodivaMenu() {
   }
 
   return (
-    <>
+    <div className='godivaMenu'>
       {/* visual */}
       <SubVisual {...godivaMenuSubVisual}/>
       {/* banner */}
@@ -79,7 +79,7 @@ function GodivaMenu() {
         <ContentsBox {...ContentBox3}/>
         <ContentsBox {...ContentBox4}/>
       </div>
-    </>
+    </div>
   )
 }
 
