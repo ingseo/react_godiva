@@ -1,0 +1,453 @@
+@charset 'utf-8';
+@import '_utils';
+
+//visual
+.godivaMenu{
+    .subVisual{
+        height: calc(100vh - 12rem); 
+        min-height: 60rem; 
+        background-image: url(../../assets/img/sub_menu/bg_mainimage.jpg); 
+        background-position: center; 
+        background-size: cover; 
+        background-repeat: no-repeat;
+
+        .text{
+            top: -4rem;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100%; 
+            height: 100%; 
+            text-align: center;
+
+            p{
+                top: 4rem; 
+                margin: 0; 
+                font-size: 5.6rem;
+                font-weight: 200;
+                font-family: 'Nunito Sans';
+            }
+
+            .title{
+                font-size: 18rem;
+                line-height: normal;
+            }
+
+            .type{
+                top: -5rem;
+                font-size: 8rem;
+            }
+        }
+    
+        .subGroup{
+            position: absolute; 
+            bottom: 23%;
+            left: calc(50% - 30rem); 
+            display: flex; 
+            margin: 0; 
+            
+            a{
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                width: 15rem; 
+                height: 5rem; 
+                font-size: 1.7rem; 
+                text-align: center; 
+                border: 0.1rem solid $main1; 
+                border-right: none; 
+                transition: 0.3s;
+
+                &:nth-child(4){
+                    border-right: 0.1rem solid $main1;
+                }
+
+                &:hover{
+                    background-color: $main1;
+                    color: $main3;
+                }
+            }
+        }
+    }
+}
+
+//visual 미디어쿼리
+@include desktop{
+    .godivaMenu{
+        .subVisual{
+            height: calc(100vh - 16rem);
+
+            .text{
+                top: -2rem;
+
+                p{
+                    font-size: 4rem;
+                }
+
+                .title{
+                    font-size: 14rem;
+                }
+
+                .type{
+                    font-size: 6rem;
+                }
+            }
+
+            .subGroup{
+                bottom: 27%;
+            }
+        }
+    }
+}
+
+@include mobileL{
+    .godivaMenu{
+        .subVisual{
+            height: 20rem; 
+            background-size: cover; 
+            min-height: auto; 
+            background-position: top;
+
+            .text{
+                top: -0.5rem;
+
+                p{
+                    top: 2rem;
+                    font-size: 2rem;
+                }
+
+                .title{
+                    font-size: 7rem;
+                }
+
+                .type{
+                    display: none;
+                }
+            }
+
+            .subGroup{
+                position: relative;
+                top: 0; 
+                left: 0; 
+                display: grid; 
+                grid-template-columns: 1fr 1fr;
+
+                a{
+                    width: auto; 
+                    border: none; 
+                    background: #f8f4eb; 
+                    color: #3c2820; 
+                    border: 1px solid #3c2820;
+
+                    &:nth-child(1){
+                        border-left: none; 
+                        border-right: none;
+                    }
+                    &:nth-child(2){
+                        border-right: none;
+                    }
+                    &:nth-child(3){
+                        border-left: none; 
+                        border-right: none; 
+                        border-top: none;
+                    }
+                    &:nth-child(4){
+                        border-right: none; 
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//banner
+.miniBanner{
+    display: flex;
+    width: 100%;
+
+    a{
+        flex: 1;
+    }
+
+    .double{
+        display: flex;
+        align-items: center;
+        height: 11rem;
+    }
+
+    .hot{
+        justify-content: flex-end;
+        padding-right: 10%;
+        background: $main1;
+        color: $main3;
+        font-size: 4rem;
+        font-weight: 900;
+
+        p{
+            margin-right: 5%;
+            margin-bottom: 0;
+            font-family: 'Nunito Sans';
+        }
+    }
+
+    .today{
+        padding-left: 10%; 
+        background: $white;
+        
+        p{
+            margin-bottom: 0;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        img{
+            height: 6rem;
+            width: auto;
+            margin-left: 2rem;
+        }
+
+        svg{
+            margin-left: 5%;
+            font-size: 4rem;
+        }
+    }
+}
+
+//banner 미디어쿼리
+@include desktop{
+    .miniBanner{
+        .double{
+            height: 8rem;
+        }
+
+        .hot{
+            font-size: 2.1rem;
+        }
+
+        .today{
+            img{
+                height: 5rem;
+            }
+
+            svg{
+                font-size: 2.1rem;
+            }
+        }
+    }
+}
+
+@include mobileL{
+    .miniBanner{
+        top: 10rem;
+        flex-direction: column;
+
+        .double{
+            justify-content: center;
+        }
+
+        .hot{
+            padding-right: 0;
+        }
+
+        .today{
+            padding-left: 0;
+        }
+    }
+}
+
+//list
+.menuList{
+    .list{
+        .bg{
+            width: 100%;
+            height: 42rem;
+            background-size: cover; 
+            background-position: center;
+        }
+
+        .mBg{
+            width: 100%;
+            height: 55rem;
+            background-size: cover; 
+            background-position: center; 
+            display: none;
+        }
+
+        .subText{
+            position: absolute;
+        }
+    }
+
+    .choco{
+        .bg{
+            background-image: url(../../assets/img/sub_menu/bg_choco.jpg);
+        }
+        
+        .mBg{
+            background-image: url(../../assets/img/sub_menu/m_bg_choco.jpg);
+        }
+
+        .subText{
+            top: calc(50% - 13rem); 
+            left: 20%;
+            text-align: start;
+
+            .type{
+                left: 5rem;
+            }
+        }
+    }
+
+    .drink{
+        .bg{
+            background-image: url(../../assets/img/sub_menu/bg_drink.jpg);
+        }
+        
+        .mBg{
+            background-image: url(../../assets/img/sub_menu/m_bg_drink.jpg);
+        }
+
+        .subText{
+            top: calc(50% - 15rem); 
+            right: 20%;
+            display: flex; 
+            flex-direction: column; 
+            align-items: flex-end;
+            text-align: end;
+
+            .type{
+                left: -5rem;
+                color: $main2;
+            }
+        }
+    }
+
+    .ice{
+        .bg{
+            background-image: url(../../assets/img/sub_menu/bg_ice.jpg);
+        }
+        
+        .mBg{
+            background-image: url(../../assets/img/sub_menu/m_bg_ice.jpg);
+        }
+
+        .subText{
+            top: calc(50% - 15rem); 
+            left: 20%;
+            text-align: start;
+
+            .type{
+                left: 15rem;
+            }
+        }
+    }
+
+    .snack{
+        .bg{
+            background-image: url(../../assets/img/sub_menu/bg_snack.jpg);
+        }
+        
+        .mBg{
+            background-image: url(../../assets/img/sub_menu/m_bg_snack.jpg);
+        }
+
+        .subText{
+            top: calc(50% - 13rem); 
+            right: 20%;
+            display: flex; 
+            flex-direction: column; 
+            align-items: flex-end;
+            text-align: end;
+
+            .title{
+                color: $main3;
+            }
+
+            .type{
+                right: 15rem;
+                color: $main2;
+            }
+
+            .ex{
+                color: $main3;
+            }
+
+            .deialisBtn{
+                border: 0.1rem solid $main3; 
+                color: $main3 ;
+
+                &:hover{
+                    color: $main1; 
+                    background: $main3;
+                }
+            }
+        }
+    }
+}
+
+//list 미디어쿼리
+@include desktop{
+    .menuList{
+        .choco, .ice{
+            .subText{
+                left: 10%;
+            }
+        }
+
+        .drink, .snack{
+            .subText{
+                right: 10%;
+            }
+        }
+    }
+}
+
+@include mobileL{
+    .menuList{
+        top: 10rem;
+
+        .list{
+            .bg{
+                display: none;
+            }
+
+            .mBg{
+                display: block;
+            }
+
+            .subText{
+                top: 7rem;
+                left: 0; 
+                right: 0;
+                text-align: center;
+                width: 100%; 
+                display: flex; 
+                flex-direction: column; 
+                align-items: center;
+
+                .title{
+                    top: -1rem;
+                }
+
+                .type{
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+//contact, footer
+@include mobileL{
+    .contact{
+        top: 10rem;
+    }
+
+    .footer{
+        top: 10rem;
+    }
+}
