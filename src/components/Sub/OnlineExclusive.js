@@ -3,6 +3,7 @@ import { Link, Route } from "react-router-dom";
 import SubVisual from './SubVisual';
 import SubBanner from './SubBanner';
 import ContentsBox from './ContentsBox';
+import '../../style/scss/onlineexclusive.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';

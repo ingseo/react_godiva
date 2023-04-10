@@ -1,0 +1,424 @@
+@charset 'utf-8';
+@import '_utils';
+
+
+.onlineExclusive{
+    
+    //visual
+    .subVisual{
+        height: 71rem; 
+        min-height: 60rem; 
+        background-image: url(../../assets/img/sub_online/bgmain.jpg); 
+        background-position: center; 
+        background-size: cover; 
+        background-repeat: no-repeat;
+
+        .text{
+            top: -1rem;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100%; 
+            height: 100%; 
+            text-align: center;
+
+            p{
+                top: -1rem; 
+                margin: 0; 
+                font-size: 3rem;
+                font-weight: 200;
+                font-family: 'Nunito Sans';
+                color: $main3;
+            }
+
+            .title{
+                top: -2rem;
+                font-size: 9rem;
+                line-height: 10rem;
+                color: $main3;
+
+                span{
+                    &:nth-child(1){
+                        letter-spacing: 3.2rem; 
+                        left: 1.6rem
+                    }
+                }
+            }
+
+            .type{
+                top: -2rem;
+                font-size: 6.7rem;
+            }
+        }
+    
+        .subGroup{
+            position: absolute; 
+            bottom: 19%;
+            left: calc(50% - 22.5rem); 
+            display: flex; 
+            margin: 0; 
+            
+            a{
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                width: 15rem; 
+                height: 5rem; 
+                font-size: 1.7rem; 
+                text-align: center;
+                color: $main3; 
+                border: 0.1rem solid $main3; 
+                border-right: none; 
+                transition: 0.3s;
+
+                &:nth-child(3){
+                    border-right: 0.1rem solid $main3;
+                }
+
+                &:hover{
+                    background-color: $main3;
+                    color: $main1;
+                }
+            }
+        }
+    }
+
+    //visual 미디어쿼리
+    @include mobileL{
+        .subVisual{
+            height: 20rem; 
+            background-size: cover; 
+            min-height: auto; 
+            background-position: top;
+
+            .text{
+                top: -0.5rem;
+
+                p{
+                    top: 0;
+                    font-size: 1.4rem;
+                }
+
+                .title{
+                    top: 0;
+                    font-size: 4rem;
+                    line-height: 4rem;
+
+                    span{
+                        &:nth-child(1){
+                            letter-spacing: 1.4rem; 
+                            left: 0.8rem;
+                        }
+                    }
+                }
+
+                .type{
+                    display: none;
+                }
+            }
+
+            .subGroup{
+                position: relative;
+                top: 0; 
+                left: 0; 
+                display: grid; 
+                grid-template-columns: auto;
+
+                a{
+                    width: auto; 
+                    border: none; 
+                    background: $main3; 
+                    color: $main1; 
+                    border: 1px solid $main1;
+
+                    &:nth-child(1){
+                        border-left: none; 
+                        border-right: none;
+                    }
+                    &:nth-child(2){
+                        border-right: none; 
+                        border-left: none ; 
+                        border-right: none; 
+                        border-top: none;
+                    }
+                    &:nth-child(3){
+                        border-left: none; 
+                        border-right: none; 
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
+
+    //banner
+    .miniBanner{
+        height: 11rem;
+        width: 100%;
+        background-image: url(../../assets/img/sub_online/label.jpg);
+        background-position: center; background-size: cover;
+
+        .off{
+            right: 20%;
+            display: flex; 
+            align-items: center; 
+            justify-content: flex-end; 
+            margin: 0 auto;
+            width: 100%; 
+            height: 100%; 
+            font-size: 2.1rem;  
+            color: #f8f4eb; 
+            
+            svg{
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    //banner 미디어쿼리
+    @include desktop{
+        .miniBanner{
+            .off{
+                right: 10%;
+            }
+        }
+    }
+
+    @include mobileL{
+        .miniBanner{
+            top: 15rem;
+            height: 8rem;
+
+            .off{
+                right: 0;
+
+                svg{
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
+    //list
+    .menuList{
+        .online{
+            .bg{
+                width: 100%;
+                height: 42rem;
+                background-size: cover; 
+                background-position: center;
+                background-image: url(../../assets/img/sub_online/bgshop.jpg);
+            }
+            
+            .mBg{
+                width: 100%;
+                height: 55rem;
+                background-size: cover; 
+                background-position: center; 
+                display: none;
+                background-image: url(../../assets/img/sub_online/m_bgshop.jpg);
+            }
+
+            .subText{
+                position: absolute;
+                top: calc(50% - 15rem); 
+                right: 20%;
+                display: flex; 
+                flex-direction: column; 
+                align-items: flex-end;
+                text-align: end;
+
+                .title{
+                    color: $main2;
+                }
+
+                .type{
+                    color: $main3;
+                }
+
+                .ex{
+                    color: $main2;
+                }
+
+                .deialisBtn{
+                    border: 0.1rem solid $main2; 
+                    color: $main2 ;
+
+                    &:hover{
+                        color: $main1; 
+                        background: $main2;
+                    }
+                }
+            }
+        }
+    }
+
+    //list 미디어쿼리
+    @include desktop{
+        .menuList{
+            .online{
+                .subText{
+                    right: 10%;
+                }
+            }
+        }
+    }
+
+    @include mobileL{
+        .menuList{
+            top: 15rem;
+
+            .online{
+                .bg{
+                    display: none;
+                }
+
+                .mBg{
+                    display: block;
+                }
+
+                .subText{
+                    top: 7rem;
+                    left: 0; 
+                    right: 0;
+                    text-align: center;
+                    width: 100%; 
+                    display: flex; 
+                    flex-direction: column; 
+                    align-items: center;
+
+                    .title{
+                        top: -1rem;
+                    }
+
+                    .type{
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //collection
+    .collection{
+        .wrap{
+            display: flex; 
+            height: 42rem; 
+            width: 100%; 
+            overflow: hidden;
+
+            .left{
+                position: absolute; 
+                height: 100%; 
+                width: calc(50% + 20rem); 
+                filter: grayscale(0.8) brightness(0.9);  
+                transition: 0.3s;
+
+                .rotate{
+                    left: -20rem;
+                    height: 100%; 
+                    width: 100%; 
+                    transform: skewX(-15deg);
+                    overflow: hidden; 
+
+                    .bg{
+                        left: 10rem;
+                        height: 100%; 
+                        width: 100%; 
+                        background: url(../../assets/img/sub_online/bgnow1.jpg);
+                        background-position: center center; 
+                        background-size: cover; 
+                        transform: skewX(15deg); 
+                        cursor: pointer;
+                    }
+                }
+
+                &:hover{
+                    filter: none;
+                }
+            }
+
+            .right{
+                position: absolute; 
+                left: 50%;
+                height: 100%; 
+                width: calc(50% + 20rem); 
+                filter: grayscale(0.8) brightness(0.9); 
+                transition: 0.3s;
+                
+                .rotate{
+                    height: 100%; 
+                    width: 100%; 
+                    transform: skewX(-15deg); 
+                    overflow: hidden;
+
+                    .bg{
+                        left: -10rem;
+                        height: 100%; 
+                        width: 100%; 
+                        background-position: center center; 
+                        background-size: cover !important;
+                        background: url(../../assets/img/sub_online/bgnow2.jpg);
+                        transform: skewX(15deg);
+                        cursor: pointer;
+                    }
+                }
+
+                &:hover{
+                    filter: none;
+                }
+            }
+        }
+        .text{
+            position: absolute; 
+            top: 13.5rem; 
+            left: calc(50% - 20rem); 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            width: 40rem; 
+            height: 18rem; 
+            font-family: "Nunito Sans"; 
+            font-size: 4.2rem; 
+            font-weight: 900; 
+            color: $main1;
+            text-align: center; 
+            text-shadow: 0.2rem 0.2rem 0rem $main3;  
+        }
+    }
+
+    //collection 미디어쿼리
+    @include mobileL{
+        .collection{
+            top: 15rem;
+    
+            .wrap{
+                height: 55rem;
+            }
+    
+            .text{
+                top: 23.5rem;
+                left: calc(50% - 15rem);
+                height: 11rem; 
+                width: 30rem; 
+                font-size: 3rem;  
+            }
+        }
+    }
+}
+
+//contact, footer
+@include mobileL{
+    .onlinePage{
+        .contact{
+            top: 15rem;
+        }
+    
+        .footer{
+            top: 15rem;
+        }
+    }
+}
