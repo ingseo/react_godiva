@@ -6,7 +6,7 @@
     
     //visual
     .subVisual{
-        height: 71rem; 
+        height: calc(100vh - 12rem); 
         min-height: 60rem; 
         background-image: url(../../assets/img/sub_online/bgmain.jpg); 
         background-position: center; 
