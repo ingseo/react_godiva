@@ -6,12 +6,12 @@ import Footer from '../components/Common/Footer'
 
 function AboutPage() {
     return (
-        <>
+        <div className='subPage'>
             <Navigation />
             <MobileNavi />
             <AboutGodiva />
             <Footer />
-        </>
+        </div>
     )
 }
 

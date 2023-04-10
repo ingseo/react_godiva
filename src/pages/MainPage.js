@@ -6,12 +6,12 @@ import Footer from '../components/Common/Footer'
 
 function MainPage() {
     return (
-    <div>
-        <Navigation />
-        <MobileNavi />
-        <Contents />
-        <Footer />
-    </div>
+        <div className='mainPage'>
+            <Navigation />
+            <MobileNavi />
+            <Contents />
+            <Footer />
+        </div>
     )
 }
 

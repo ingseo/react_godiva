@@ -6,12 +6,12 @@ import Footer from '../components/Common/Footer'
 
 function OnlinePage() {
     return (
-        <>
+        <div className='subPage'>
             <Navigation />
             <MobileNavi />
             <OnlineExclusive />
             <Footer />
-        </>
+        </div>
     )
 }
 
