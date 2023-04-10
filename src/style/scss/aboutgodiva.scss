@@ -1,0 +1,390 @@
+@charset 'utf-8';
+@import '_utils';
+
+.aboutGodiva{
+    //visual
+    .subVisual{
+        height: calc(100vh - 12rem); 
+        min-height: 60rem; 
+        background-image: url(../../assets/img/sub_about/mainbg.jpg); 
+        background-position: right; 
+        background-size: cover; 
+        background-repeat: no-repeat;
+
+        .text{
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100%; 
+            height: 100%; 
+            text-align: center;
+
+            p{
+                top: -2rem; 
+                margin: 0; 
+                font-size: 3rem;
+                font-weight: 200;
+                font-family: 'Nunito Sans';
+                color: $main1;
+            }
+
+            .title{
+                top: -2rem;
+                font-size: 9rem;
+                line-height: 10rem;
+                color: $main1;
+
+                span{
+                    &:nth-child(1){
+                        letter-spacing: 3.2rem; 
+                        left: 1.6rem
+                    }
+                }
+            }
+
+            .type{
+                top: -3rem;
+                font-size: 6.7rem;
+            }
+        }
+    
+        .subGroup{
+            position: absolute; 
+            bottom: 19%;
+            left: calc(50% - 15rem); 
+            display: flex; 
+            margin: 0; 
+            
+            a{
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                width: 15rem; 
+                height: 5rem; 
+                font-size: 1.7rem; 
+                text-align: center;
+                color: $main1; 
+                border: 0.1rem solid $main1; 
+                border-right: none; 
+                transition: 0.3s;
+
+                &:nth-child(2){
+                    border-right: 0.1rem solid $main1;
+                }
+
+                &:hover{
+                    background-color: $main1;
+                    color: $main3;
+                }
+            }
+        }
+    }
+
+    //visual 미디어쿼리
+    @include mobileL{
+        .subVisual{
+            height: 20rem; 
+            background-size: cover; 
+            min-height: auto; 
+            background-position: top;
+
+            .text{
+                top: -0.5rem;
+
+                p{
+                    top: 0;
+                    font-size: 1.4rem;
+                }
+
+                .title{
+                    top: 0;
+                    font-size: 4rem;
+                    line-height: 4rem;
+
+                    span{
+                        &:nth-child(1){
+                            letter-spacing: 1.4rem; 
+                            left: 0.8rem;
+                        }
+                    }
+                }
+
+                .type{
+                    display: none;
+                }
+            }
+
+            .subGroup{
+                position: relative;
+                top: 0; 
+                left: 0; 
+                display: grid; 
+                grid-template-columns: auto;
+
+                a{
+                    width: auto; 
+                    border: none; 
+                    background: $main3; 
+                    color: $main1; 
+                    border: 1px solid $main1;
+
+                    &:nth-child(1){
+                        border-left: none; 
+                        border-right: none;
+                    }
+                    &:nth-child(2){
+                        border-left: none; 
+                        border-right: none; 
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
+
+    //banner
+    .miniBanner{
+        height: 11rem;
+        width: 100%;
+        background-image: url(../../assets/img/sub_about/label.jpg);
+        background-position: center; background-size: cover;
+
+        .off{
+            right: 20%;
+            display: flex; 
+            align-items: center; 
+            justify-content: flex-end; 
+            margin: 0 auto;
+            width: 100%; 
+            height: 100%; 
+            font-size: 2.1rem;  
+            color: #f8f4eb; 
+            
+            svg{
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    //banner 미디어쿼리
+    @include desktop{
+        .miniBanner{
+            .off{
+                right: 10%;
+            }
+        }
+    }
+
+    @include mobileL{
+        .miniBanner{
+            top: 10rem;
+            height: 8rem;
+
+            .off{
+                right: 0;
+
+                svg{
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
+    
+    //list
+    .menuList{
+        .list{
+            .bg{
+                width: 100%;
+                height: 42rem;
+                background-size: cover; 
+                background-position: center;
+            }
+
+            .mBg{
+                width: 100%;
+                height: 55rem;
+                background-size: cover; 
+                background-position: center; 
+                display: none;
+            }
+
+            .subText{
+                position: absolute;
+            }
+        }
+
+        .story{
+            .bg{
+                background-image: url(../../assets/img/sub_about/storybg.jpg);
+            }
+            
+            .mBg{
+                background-image: url(../../assets/img/sub_about/m_storybg.jpg);
+            }
+
+            .subText{
+                top: calc(50% - 15rem); 
+                right: 20%;
+                display: flex; 
+                flex-direction: column; 
+                align-items: flex-end;
+                text-align: end;
+
+                .title{
+                    color: $main1;
+                }
+
+                .type{
+                    color: $main3;
+                }
+
+                .ex{
+                    color: $main1;
+                }
+
+                .deialisBtn{
+                    border: 0.1rem solid $main1; 
+                    color: $main1 ;
+
+                    &:hover{
+                        color: $main3; 
+                        background: $main1;
+                    }
+                }
+            }
+        }
+
+        .shop{
+            .bg{
+                background-image: url(../../assets/img/sub_about/storebg.jpg);
+            }
+            
+            .mBg{
+                background-image: url(../../assets/img/sub_about/m_storebg.jpg);
+            }
+
+            .subText{
+                top: calc(50% - 15rem); 
+                left: 20%;
+                display: flex; 
+                flex-direction: column; 
+                text-align: start;
+
+                .title{
+                    color: $main3;
+                }
+
+                .type{
+                    color: $main2;
+                }
+
+                .ex{
+                    color: $main3;
+                }
+
+                .deialisBtn{
+                    border: 0.1rem solid $main3; 
+                    color: $main3 ;
+
+                    &:hover{
+                        color: $main1; 
+                        background: $main3;
+                    }
+                }
+            }
+        }
+    }
+
+    //list 미디어쿼리
+    @include desktop{
+        .menuList{
+            .story{
+                .subText{
+                    right: 10%;
+                }
+            }
+            .shop{
+                .subText{
+                    left: 10%;
+                }
+            }
+        }
+    }
+
+    @include mobileL{
+        .menuList{
+            top: 10rem;
+
+            .story, .shop{
+                .bg{
+                    display: none;
+                }
+
+                .mBg{
+                    display: block;
+                }
+
+                .subText{
+                    top: 7rem;
+                    left: 0; 
+                    right: 0;
+                    text-align: center;
+                    width: 100%; 
+                    display: flex; 
+                    flex-direction: column; 
+                    align-items: center;
+
+                    .title{
+                        top: -1rem;
+                    }
+
+                    .type{
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            .shop{
+                .subText{
+                    .title{
+                        color: $main1;
+                    }
+    
+                    .type{
+                        color: $main3;
+                    }
+    
+                    .ex{
+                        color: $main1;
+                    }
+    
+                    .deialisBtn{
+                        border: 0.1rem solid $main1; 
+                        color: $main1 ;
+    
+                        &:hover{
+                            color: $main3; 
+                            background: $main1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//contact, footer
+@include mobileL{
+    .aboutPage{
+        .contact{
+            top: 10rem;
+        }
+    
+        .footer{
+            top: 10rem;
+        }
+    }
+}
