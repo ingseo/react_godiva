@@ -6,7 +6,7 @@ import Footer from '../components/Common/Footer'
 
 function NewsPage() {
     return (
-        <div className='subPage'>
+        <div className='subPage newsPage'>
             <Navigation />
             <MobileNavi />
             <NewsEvent />

@@ -6,7 +6,7 @@ import Footer from '../components/Common/Footer'
 
 function AboutPage() {
     return (
-        <div className='subPage'>
+        <div className='subPage aboutPage'>
             <Navigation />
             <MobileNavi />
             <AboutGodiva />

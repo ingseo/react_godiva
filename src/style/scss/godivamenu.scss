@@ -132,9 +132,9 @@
                 a{
                     width: auto; 
                     border: none; 
-                    background: #f8f4eb; 
-                    color: #3c2820; 
-                    border: 1px solid #3c2820;
+                    background: $main3; 
+                    color: $main1; 
+                    border: 1px solid $main1;
 
                     &:nth-child(1){
                         border-left: none; 
@@ -433,6 +433,19 @@
                     }
                 }
             }
+        }
+    }
+}
+
+//contact, footer
+@include mobileL{
+    .menuPage{
+        .contact{
+            top: 10rem;
+        }
+    
+        .footer{
+            top: 10rem;
         }
     }
 }

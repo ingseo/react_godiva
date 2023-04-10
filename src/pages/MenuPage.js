@@ -7,7 +7,7 @@ import Footer from '../components/Common/Footer'
 
 function MenuPage() {
     return (
-        <div className='subPage'>
+        <div className='subPage menuPage'>
             <Navigation />
             <MobileNavi />
             <GodivaMenu />
