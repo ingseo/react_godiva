@@ -15,19 +15,19 @@ function Footer() {
                         <ul>
                             <h5>SITEMAP</h5>
                             <span></span>
-                            <li><Link to="/">사이트맵</Link></li>
-                            <li><Link to="/">개인정보 취급방침</Link></li>
-                            <li><Link to="/">사업자 정보</Link></li>
-                            <li><Link to="/">마케팅 제휴/매장 오픈</Link></li>
-                            <li><Link to="/">채용정보</Link></li>
+                            <li><Link to="#">사이트맵</Link></li>
+                            <li><Link to="#">개인정보 취급방침</Link></li>
+                            <li><Link to="#">사업자 정보</Link></li>
+                            <li><Link to="#">마케팅 제휴/매장 오픈</Link></li>
+                            <li><Link to="#">채용정보</Link></li>
                         </ul>
                         <ul>
                             <h5>CUSTOMER SERVICE</h5>
                             <span></span>
-                            <li><Link to="/">고객센터</Link></li>
-                            <li><Link to="/">FAQ</Link></li>
-                            <li><Link to="/">1:1 문의</Link></li>
-                            <li><Link to="/">주문 / 배송 / 대량구매</Link></li>
+                            <li><Link to="#">고객센터</Link></li>
+                            <li><Link to="#">FAQ</Link></li>
+                            <li><Link to="#">1:1 문의</Link></li>
+                            <li><Link to="#">주문 / 배송 / 대량구매</Link></li>
                         </ul>
                         <ul>
                             <h5>OPENING TIME</h5>
@@ -42,7 +42,7 @@ function Footer() {
                             <span></span>
                             <div className="iconGroup">
                                 <li>
-                                    <Link to="/">
+                                    <Link to="https://www.facebook.com/GODIVAKR/">
                                         <img src={ require('../../assets/img/main/icon_facebook.png') } alt="페이스북" />
                                     </Link>
                                 </li>

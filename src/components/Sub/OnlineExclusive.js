@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SubVisual from './SubVisual';
 import SubBanner from './SubBanner';
 import ContentsBox from './ContentsBox';
@@ -17,9 +17,9 @@ function OnlineExclusive() {
     type: 'A special gift for loved ones',
     subGroup: 
     <ul className="subGroup">
-      <Link to="/"><li>전체 상품</li></Link>
-      <Link to="/"><li>시즌 상품</li></Link>
-      <Link to="/"><li>컬렉션</li></Link>
+      <Link to="#"><li>전체 상품</li></Link>
+      <Link to="#"><li>시즌 상품</li></Link>
+      <Link to="#"><li>컬렉션</li></Link>
     </ul>,
   }
 

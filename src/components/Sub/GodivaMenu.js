@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SubVisual from './SubVisual';
 import SubBanner from './SubBanner';
 import ContentsBox from './ContentsBox';
@@ -17,10 +17,10 @@ function GodivaMenu() {
     type: 'Premium chocolate for you',
     subGroup: 
     <ul className="subGroup">
-      <Link to="/"><li>초콜릿</li></Link>
-      <Link to="/"><li>음료</li></Link>
-      <Link to="/"><li>아이스크림</li></Link>
-      <Link to="/"><li>스낵＆디저트</li></Link>
+      <Link to="#"><li>초콜릿</li></Link>
+      <Link to="#"><li>음료</li></Link>
+      <Link to="#"><li>아이스크림</li></Link>
+      <Link to="#"><li>스낵＆디저트</li></Link>
     </ul>,
   }
 

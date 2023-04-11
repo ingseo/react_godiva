@@ -1,10 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function MenuCard(props) {
     return (
-        <Link to="/">
+        <Link to="/menu">
             <div className="boxover">
                 {props.img}
                 {props.mImg}

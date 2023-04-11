@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SubVisual from './SubVisual';
 import SubBanner from './SubBanner';
 import ContentsBox from './ContentsBox';
@@ -17,8 +17,8 @@ function AboutGodiva() {
         type: 'A special gift for loved ones',
         subGroup: 
         <ul className="subGroup">
-        <Link to="/"><li>고디바 스토리</li></Link>
-        <Link to="/"><li>매장 안내</li></Link>
+        <Link to="#"><li>고디바 스토리</li></Link>
+        <Link to="#"><li>매장 안내</li></Link>
         </ul>,
     }
 
