@@ -124,7 +124,6 @@
         
                     a{
                         color: $navi; 
-                        padding: 10px 3rem;
                         cursor: pointer;
                     }
                 }
@@ -132,7 +131,7 @@
 
             //submenubar
             .subMenuGroup{
-                top: 5rem; 
+                top: 6rem; 
                 width: 100%; 
                 height: 0; 
                 z-index: 200; 
@@ -144,7 +143,6 @@
                     width: 100%; 
                     height: 10rem; 
                     border-bottom: 0.1rem solid $shadow; 
-                    display: none; 
                     background: $main1;
 
                     .wrap{
@@ -158,8 +156,10 @@
                         line-height: 3.2rem; 
                         
                         li{
-                            color: $main2;
-                            padding: 0.5rem;
+                            a{
+                                color: $main2;
+                                padding: 0.5rem;
+                            }
                         }
                     }
 
