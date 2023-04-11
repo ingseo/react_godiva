@@ -11,18 +11,18 @@ import AboutPage from './pages/AboutPage'
 import './style/scss/reset.scss'
 import './style/scss/common.scss'
 
+
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path={"/"} element={<MainPage />}></Route>
-          <Route path={"/menu"} element={<MenuPage />}></Route>
-          <Route path={"/online"} element={<OnlinePage />}></Route>
-          <Route path={"/news"} element={<NewsPage />}></Route>
-          <Route path={"/about"} element={<AboutPage />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path={"/"} element={<MainPage />}></Route>
+        <Route path={"/menu"} element={<MenuPage />}></Route>
+        <Route path={"/online"} element={<OnlinePage />}></Route>
+        <Route path={"/news"} element={<NewsPage />}></Route>
+        <Route path={"/about"} element={<AboutPage />}></Route>
+      </Routes>
     </div>
   );
 }
