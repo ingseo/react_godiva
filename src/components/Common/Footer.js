@@ -42,24 +42,24 @@ function Footer() {
                             <span></span>
                             <div className="iconGroup">
                                 <li>
-                                    <Link to="https://www.facebook.com/GODIVAKR/">
+                                    <a href="https://www.facebook.com/GODIVAKR/">
                                         <img src={ require('../../assets/img/main/icon_facebook.png') } alt="페이스북" />
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="https://www.instagram.com/godivakorea/?hl=ko">
+                                    <a href="https://www.instagram.com/godivakorea/?hl=ko">
                                         <img src={ require('../../assets/img/main/icon_insta.png') } alt="인스타그램" />
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="https://pf.kakao.com/_qxgxnlxl">
+                                    <a href="https://pf.kakao.com/_qxgxnlxl">
                                         <img src={ require('../../assets/img/main/icon_chat.png') } alt="카카오톡" />
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="https://www.youtube.com/channel/UCFB6ZUKG6l6pB0wvDvxjftg">
+                                    <a href="https://www.youtube.com/channel/UCFB6ZUKG6l6pB0wvDvxjftg">
                                         <img src={ require('../../assets/img/main/icon_utb.png') } alt="유튜브" />
-                                    </Link>
+                                    </a>
                                 </li>
                             </div>
                         </ul>

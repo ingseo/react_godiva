@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link, Route } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 function InstagramCard(props) {
     return (
-        <Link to={props.link} className="box">
+        <a href={props.link} className="box">
             <div className="boxWrap">
                 {props.img}
                 <div className="imgText">
@@ -16,7 +15,7 @@ function InstagramCard(props) {
                 </div>
                 <div className="backColor"></div>
             </div>
-        </Link>
+        </a>
     )
 }
 
