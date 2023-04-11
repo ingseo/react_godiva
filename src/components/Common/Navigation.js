@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../../style/scss/navi.scss'
@@ -6,8 +6,13 @@ import '../../style/scss/navi.scss'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 function Navigation() {
+
+    const [isActive, setIsActive] = useState(false);
+    const clickSearch = () => {
+        setIsActive(!isActive)
+    }
+
     return (
-        
         <div className="navi">
             <div className="fixed">
                 <div className="naviUp">
@@ -17,8 +22,8 @@ function Navigation() {
                         </Link>
                     </div>
                     <div className="right">
-                        <FontAwesomeIcon icon={faMagnifyingGlass} className='icon' fixedWidth/>
-                        <div className="search">
+                        <FontAwesomeIcon icon={faMagnifyingGlass} onClick={clickSearch} className='icon' fixedWidth />
+                        <div className={`search ${isActive ? 'clickSearch' : ''}`}>
                             <input type="text" />
                         </div>
                         <ul className="upMenu">
