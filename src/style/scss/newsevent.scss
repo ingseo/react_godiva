@@ -1,0 +1,415 @@
+@charset 'utf-8';
+@import '_utils';
+
+.newsEvent{
+    //visual
+    .subVisual{
+        height: calc(100vh - 12rem); 
+        min-height: 60rem; 
+        background-image: url(../../assets/img/sub_news/mainbg.jpg); 
+        background-position: center; 
+        background-size: cover; 
+        background-repeat: no-repeat;
+
+        .text{
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100%; 
+            height: 100%; 
+            text-align: center;
+
+            .miniLogo{
+                top: -4rem;
+                width: 18rem;
+            }
+
+            .type{
+                top: -4rem;
+                font-size: 6.7rem;
+            }
+        }
+    
+        .subGroup{
+            position: absolute; 
+            bottom: 30%;
+            left: calc(50% - 15rem); 
+            display: flex; 
+            margin: 0; 
+            
+            li{
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                width: 15rem; 
+                height: 5rem; 
+                font-size: 1.7rem; 
+                text-align: center;
+                color: $main3; 
+                border: 0.1rem solid $main3; 
+                border-right: none; 
+                transition: 0.3s;
+                cursor: pointer;
+
+                &:nth-child(1){
+                    background: $main3;
+                    color: $main1;
+                }
+                &:nth-child(2){
+                    border-right: 0.1rem solid $main3;
+                }
+            }
+        }
+
+        .underArrow{
+            position: absolute; 
+            bottom: 3rem; 
+            left: calc(50% - 2.4rem);
+            width: auto;
+            z-index: 100;
+            @include animation(0s, 1s, under);
+            animation-iteration-count: infinite; 
+            animation-fill-mode: forwards; 
+            animation-timing-function: linear;
+        }
+    }
+
+    //visual 미디어쿼리
+    @include mobileL{
+        .subVisual{
+            height: 20rem; 
+            background-size: cover; 
+            min-height: auto; 
+            background-position: top;
+
+            .text{
+                top: -0.5rem;
+
+                .miniLogo{
+                    top: 0;
+                    width: 13rem;
+                }
+
+                .type{
+                    display: none;
+                }
+            }
+
+            .subGroup{
+                position: relative;
+                top: 0; 
+                left: 0; 
+                display: grid; 
+                grid-template-columns: 1fr 1fr;
+
+                li{
+                    width: auto; 
+                    border: none; 
+                    background: $main3; 
+                    color: $main1; 
+                    border: 1px solid $main1;
+
+                    &:nth-child(1){
+                        border-left: none; 
+                        border-bottom: none;
+                    }
+                    &:nth-child(2){
+                        border-right: none; 
+                        border-left: none ; 
+                        border-top: none; 
+                        background: $black; 
+                        color: $main3;
+                    }
+                }
+            }
+
+            .underArrow{display: none;}
+        }
+    }
+
+    //search box
+    .searchBox{
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+        height: 15rem; 
+        background: $main3;
+
+        .container{
+            top: 70%;
+            display: flex; 
+            justify-content: flex-end; 
+            padding: 0; 
+            margin: 0 4rem;
+            width: 100%;
+            color: $main1; 
+            z-index: 100;
+
+            .box{
+                display: flex; 
+                justify-content: center; 
+                height: 4rem; 
+                width: 8rem; 
+                margin-right: 1rem; 
+                background: none; 
+                border: 0.1rem solid $main1;
+            }
+
+            .search{
+                height: 4rem;
+
+                input{
+                    height: 4rem; 
+                    width: 25rem; 
+                    padding: 0.5rem; 
+                    padding-right: 3.5rem; 
+                    background: none; 
+                    border: 0.1rem solid $main1;
+                }
+
+                svg{
+                    position: absolute;
+                    right: 1rem;
+                    top: 1rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    //search box 미디어쿼리
+    @include mobileL{
+        .searchBox{
+            top: 5rem;
+            height: 10rem;
+
+            .container{
+                touch-action: 50%;
+                justify-content: center;
+            }
+        }
+    }
+
+    //new, event
+    .newsEventBox{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .newsBox{
+            display: flex; 
+            justify-content: center;
+            width: 100%; 
+            height: calc(100vh - 42rem); 
+            background: $main3; 
+            color: $main1; 
+            
+            .container{
+                display: flex; 
+                flex-direction: column; 
+                justify-content: center;
+                width: 100%;
+                height: 100%; 
+                padding: 0;
+                margin: 0 4rem;
+
+                .row{
+                    display: flex; 
+                    align-items: center;
+                    width: 100%;
+                    height: 6rem; 
+                    border-bottom: 0.2rem solid $main1; 
+                    font-size: 1.4rem; 
+                    font-weight: bold; 
+                    
+                    &:nth-child(1){
+                        border-top: 0.2rem solid $main1;
+                    }
+                
+                    .first{
+                        width: 10%; 
+                        text-align: center;
+                    }
+
+                    a{
+                        display: block; 
+                        width: 80%; 
+                        text-overflow: ellipsis; 
+                        white-space: nowrap; 
+                        overflow: hidden;
+                    }
+
+                    .third{
+                        width: 10%; 
+                        text-align: end;
+                    }
+                }
+
+                &::after{
+                    display: none;
+                }
+                &::before{
+                    display: none;
+                }
+            }
+        }
+
+        .eventBox{
+            position: absolute; 
+            top: 0; 
+            left: 100%;
+            display: flex; 
+            justify-content: center;
+            width: 100%; 
+            height: calc(100vh - 42rem); 
+            background: $main3; 
+            color: $main1; 
+
+            .container{
+                display: grid; 
+                grid-template-columns: 1fr 1fr; 
+                grid-gap: 2rem; 
+                width: 100%;
+                padding: 2rem 0;
+                margin: 0 4rem;
+
+                &::after{
+                    display: none;
+                }
+                &::before{
+                    display: none;
+                }
+
+                .box{
+                    display: flex; 
+                    justify-content: center; 
+                    align-items: center;
+                    border: 0.2rem solid $main1; 
+                    font-weight: bold; 
+                }
+            }
+        }
+    }
+
+    //new, event
+    @include desktop{
+        .newsEventBox{
+            .newsBox, .eventBox{
+                height: calc(100vh - 38rem);
+            }
+        }
+    }
+
+    @include mobileL{
+        .newsEventBox{
+            .newsBox, .eventBox{
+                top: 5rem;
+                padding-top: 3rem; 
+                padding-bottom: 7rem;
+
+                .container{
+                    margin: 0 2rem;
+                    min-width: 30rem;
+                }
+            }
+            
+            .newsBox{
+                .container{
+                    .row{
+                        .first{
+                            width: 20%;
+                        }
+
+                        a{
+                            width: 60%;
+                            padding: 0 1rem;
+                        }
+
+                        .third{
+                            width: 20%;
+                        }
+                    }
+                }
+            }
+
+            .eventBox{
+                .container{
+                    display: flex; 
+                    flex-direction: column; 
+                    padding: 2rem 0;
+                    margin-bottom: 0;
+
+                    .box{
+                        height: 12rem;
+                        margin: 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //count
+    .count{
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        height: 15rem; 
+        width: 100%; 
+        height: 15rem; 
+        background: $main3; 
+        background: $main3;    
+
+        .btnGroup{
+            top: -15%;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            color: $main1; 
+
+            .arrowBtn{
+                margin: 0 1rem; 
+                width: 3rem;  
+                cursor: pointer;
+            }
+
+            .countBtn{
+                display: flex; 
+                align-items: center; 
+                margin-bottom: 0; 
+                font-size: 1.4rem; 
+                font-weight: bold;
+
+                li{
+                    margin: 0 1rem; 
+                    padding: 0.5rem; 
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @include mobileL{
+        .count{
+            height: 10rem;
+
+            .countBtn{
+                li{
+                    margin: 0 0.5rem;
+                }   
+            }
+        }
+    }
+}
+
+@include keyframe (under) {
+    0%{
+        bottom: 2.5rem
+    }
+    50% {
+        bottom: 3rem
+    }
+    100% {
+        bottom: 2.5rem
+    }
+}
