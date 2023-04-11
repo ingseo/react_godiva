@@ -34,13 +34,6 @@
                 font-size: 9rem;
                 line-height: 10rem;
                 color: $main1;
-
-                span{
-                    &:nth-child(1){
-                        letter-spacing: 3.2rem; 
-                        left: 1.6rem
-                    }
-                }
             }
 
             .type{
@@ -101,13 +94,6 @@
                     top: 0;
                     font-size: 4rem;
                     line-height: 4rem;
-
-                    span{
-                        &:nth-child(1){
-                            letter-spacing: 1.4rem; 
-                            left: 0.8rem;
-                        }
-                    }
                 }
 
                 .type{
