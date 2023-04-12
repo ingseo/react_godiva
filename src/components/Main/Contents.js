@@ -10,6 +10,7 @@ import { Parallax } from 'react-parallax';
 
 import '../../style/scss/mainpage.scss'
 
+
 function Contents() {
     
     //subTitle props
@@ -110,7 +111,15 @@ function Contents() {
         mType: '#StrawberryDay',
     }
 
-    //초콜렛 배경
+    //email
+    const [hover, setHover] = useState(false);
+    const emailMouseOver = () => {
+        setHover(true);
+    }
+    const emailMouseOut = () => {
+        setHover(false);
+    }
+
 
     return (
         <>
@@ -231,8 +240,8 @@ function Contents() {
                 <div className="container">
                     <input placeholder="Type to your e-mail adress" />
                     <div className="sign">
-                        <input type="submit" value="sign" />
-                        <div><span></span></div>
+                        <input type="submit" value="sign" onMouseEnter={emailMouseOver} onMouseLeave={emailMouseOut}/>
+                        <div><span className={`subMenu ${hover ? 'mouseOver' : 'mouseOut'}`}></span></div>
                     </div>
                 </div>
             </div>

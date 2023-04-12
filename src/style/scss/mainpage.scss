@@ -127,15 +127,15 @@
                             }
                         }
                     }
-        
-                    // addclass
-                    .hover{
-                        z-index: 50 !important; 
-                        transform: rotate(5deg) !important;
-        
-                        .wrap{
-                            transform: rotateY(180deg)
-                        }
+                }
+
+                // addclass
+                .hover{
+                    z-index: 50 !important; 
+                    transform: rotate(5deg) !important;
+    
+                    .wrap{
+                        transform: rotateY(180deg)
                     }
                 }
 
@@ -1015,6 +1015,13 @@
                     background: $red; 
                     animation-fill-mode: forwards;
                 }
+            }
+
+            .mouseOver{
+                @include animation(0, 0.5s, left);
+            }
+            .mouseOut{
+                @include animation(0, 0.5s, right);
             }
         }
     }
