@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
+import TopBtn from './TopBtn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../style/scss/footer.scss'
 
 import { faPhone, faClockRotateLeft } from '@fortawesome/free-solid-svg-icons';
-
 
 function Footer() {
     return (
@@ -76,7 +76,7 @@ function Footer() {
                         <p>통신판매업신고번호 제 2010-서울강남-02017호 3 ㅣ 사업자정보확인</p>
                     </div> 
                 </div>
-                <input type="button" value="▲" className="top" />     
+                <TopBtn />   
             </div>
         </div>
     )
