@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SubVisual from './SubVisual';
 import NewsList from './NewsList';
 import EventBox from './EventBox';
+import CountBox from './CountBox';
 import '../../style/scss/newsevent.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -9,14 +10,26 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 function NewsEvent() {
 
+  //new&event
+  const [toggle, setToggle] = useState(true);
+
+  const clickNews = () => {
+    setToggle(true);
+  };
+  const clickEvent = () => {
+    setToggle(false);
+  };
+
+
+
   //subVisual props
   const aboutSubVisual = {
     logo: <div className="miniLogo"><img src={ require('../../assets/img/sub_news/new_logo.png') } alt="미니로고" /></div>,
     type: 'Godiva with you',
     subGroup: 
       <ul className="subGroup">
-        <li>NEWS</li>
-        <li>EVENT</li>
+        <li onClick={clickNews} className={toggle ? 'on' : ''}>NEWS</li>
+        <li onClick={clickEvent} className={toggle ? '' : 'on'}>EVENT</li>
       </ul>,
     under: <div className='underArrow'><img src={ require('../../assets/img/main/under_arrow.png') } alt="아래화살표" /></div>
   }
@@ -77,7 +90,7 @@ function NewsEvent() {
       </div>
       {/* news, event */}
       <div className='newsEventBox'>
-        <div className='newsBox'>
+        <div className={`newsBox ${toggle ? 'on' : 'off'}`}>
           <div className='container'>
             <NewsList {...newsList1}/>
             <NewsList {...newsList2}/>
@@ -87,34 +100,16 @@ function NewsEvent() {
             <NewsList {...newsList6}/>
             <NewsList {...newsList7}/>
           </div>
+          <CountBox />
         </div>
-        <div className='eventBox'>
+        <div className={`eventBox ${toggle ? 'off' : 'on'}`}>
           <div className='container'>
             <EventBox />
             <EventBox />
             <EventBox />
             <EventBox />
           </div>
-        </div>
-      </div>
-      <div className='count'>
-        <div className='btnGroup'>
-          <div className="leftBtn arrowBtn">
-            <img src={ require('../../assets/img/sub_news/main-slick-prev.png') } alt="왼쪽버튼" />
-          </div>
-          <ul className="countBtn">
-            <li className="cBtn">1</li>
-            <li className="cBtn">2</li>
-            <li className="cBtn">3</li>
-            <li className="cBtn">4</li>
-            <li className="cBtn">5</li>
-            <li className="cBtn">6</li>
-            <li className="cBtn">7</li>
-            <li className="cBtn">8</li>
-          </ul>
-          <div className="rightBtn arrowBtn">
-            <img src={ require('../../assets/img/sub_news/main-slick-next.png') } alt="오른쪽튼" />
-          </div>
+          <CountBox />
         </div>
       </div>
     </div>
