@@ -5,11 +5,6 @@
 .chocoBg{
     background-color: $main3; 
 }
-@include desktopBg{
-    .chocoBg{
-        background-image:none;
-    }
-}
 
 //event
 .event{

@@ -121,7 +121,6 @@ function Contents() {
                 className="chocoBg" 
                 strength={500} 
                 bgImage={require('../../assets/img/main/choco_bg2.png')}
-                bgImageSize={'cover'}
             >
 
                 {/* event */}
