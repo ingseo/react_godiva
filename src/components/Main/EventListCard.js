@@ -2,7 +2,7 @@ import React from 'react'
 
 function EventListCard(props) {
   return (
-    <div className="card">    
+    <div className={`card ${props.cardName}`}>    
         <div className="wrap">
             <div className="front">
                 {props.img}

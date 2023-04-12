@@ -13,6 +13,17 @@ import '../../style/scss/mainpage.scss'
 
 function Contents() {
     
+    //menu
+    const [display, setDisplay] = useState([false, false, false]);
+    function outMouseDisplay() {
+        setDisplay([false, false, false]);
+    }
+    function inMouseDisplay(index) {
+        let newDisplay = [...display];
+        newDisplay[index] = true;
+        setDisplay(newDisplay);
+    }
+
     //subTitle props
     const titleProps1 = {
         title: 'EVENT LIST',
@@ -25,16 +36,43 @@ function Contents() {
 
     //event props
     const eventProps1 = {
+        cardName: display[1] ? 'hover' : '',
         img: <img src={ require('../../assets/img/main/event1.png') } alt="2020 스프링 앙샹뜨 컬렉션" />,
         back: <>2020 스프링 앙샹뜨 컬렉션<br />Spring Enchanteur Collection</>,
     }
     const eventProps2 = {
+        cardName: display[2] ? 'hover' : '',
         img: <img src={ require('../../assets/img/main/event2.png') } alt="고디바 회원만의 특별한 혜택" />,
         back: <>고디바 회원만의 특별한 혜택<br />GODIVA MAMBERSHIP</>,
     }
     const eventProps3 = {
+        cardName: display[3] ? 'hover' : '',
         img: <img src={ require('../../assets/img/main/event3.png') } alt="프리미엄 컵 아이스크림" />,
         back: <>프리미엄 컵 아이스크림<br />Premium Cup Ice Cream</>,
+    }
+
+    const eventList = {
+        listName1: 
+            <li 
+                onMouseEnter={() => inMouseDisplay(1)}
+                onMouseLeave={() => outMouseDisplay()}
+            >
+                2020 스프링 앙샹뜨 컬렉션<br />Spring Enchanteur Collection 
+            </li>,
+        listName2: 
+            <li 
+                onMouseEnter={() => inMouseDisplay(2)}
+                onMouseLeave={() => outMouseDisplay()}
+            >
+                고디바 회원만의 특별한 혜택<br />GODIVA MAMBERSHIP
+            </li>,
+        listName3: 
+            <li 
+                onMouseEnter={() => inMouseDisplay(3)}
+                onMouseLeave={() => outMouseDisplay()}
+            >
+                프리미엄 컵 아이스크림<br />Premium Cup Ice Cream
+            </li>,
     }
 
     //godiva menu props
@@ -137,7 +175,7 @@ function Contents() {
                     <div className="container">
                         <div className="left">
                             <SubTitle {...titleProps1}/>
-                            <EventList />
+                            <EventList {...eventList}/>
                         </div>
                         <div className="right">
                             <div className="cardGroup">
@@ -149,7 +187,7 @@ function Contents() {
                                 <EventListCard {...eventProps1}/>
                                 <EventListCard {...eventProps2}/>
                                 <EventListCard {...eventProps3}/>
-                                <EventList />
+                                <EventList {...eventList}/>
                             </div>
                         </div>            
                     </div>
