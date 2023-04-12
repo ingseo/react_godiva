@@ -1,11 +1,13 @@
-import React from 'react'
-import { Link, Route } from "react-router-dom";
+import React, { useEffect, useState } from 'react'
+import { Link } from "react-router-dom";
 import SliderComponent from './SliderComponent';
 import SubTitle from './SubTitle';
 import EventList from './EventList';
 import EventListCard from './EventListCard';
 import MenuCard from './MenuCard';
 import InstagramCard from './InstagramCard';
+import { Parallax } from 'react-parallax';
+
 import '../../style/scss/mainpage.scss'
 
 function Contents() {
@@ -70,58 +72,58 @@ function Contents() {
         img: <img src={ require('../../assets/img/main/insta1.jpg') } alt="인스타그램" />,
         type: '#고디바 #고디바초콜릿 #코디바화이트데이 #화이트데이초콜릿 #화이트데이 #완벽한고백 #화이트데이 선물 #여자친구선물 #고디바퍼펙트페어링컬렉션 #godiva #godivachocolate #WonderAwaits',
         mType: '#고디바화이트데이',
-
     }
     const instaProps2 = {
         link: "https://www.instagram.com/godivakorea/?hl=ko",
         img: <img src={ require('../../assets/img/main/insta2.jpg') } alt="인스타그램" />,
         type: '#고디바 #고디바초콜릿 #고디바발렌타인데이 #발렌타인데이초콜릿 #발렌타인데이 #발렌타인데이선물 #남자친구선물 선물 #남자친구선물 #고디바크로니클컬렉션 #godiva #godivachocolate #WonderAwaits',
         mType: '#고디바발렌타인데이',
-
     }
     const instaProps3 = {
         link: "https://www.instagram.com/godivakorea/?hl=ko",
         img: <img src={ require('../../assets/img/main/insta3.jpg') } alt="인스타그램" />,
         type: '#고디바 #고디바골드컬렉션 #프리미엄벨기에초콜릿 #godiva #godivachocolate',
         mType: '#고디바골드컬렉션',
-
     }
     const instaProps4 = {
         link: "https://www.instagram.com/godivakorea/?hl=ko",
         img: <img src={ require('../../assets/img/main/insta4.jpg') } alt="인스타그램" />,
         type: '#godiva Our Signature Coffee Blend is made from perfectly roasted Arabica beans, sourced from thr finest growing regions in the world. Treat yourself to its exceptional, full-bodied flavor at any GODIVA Cafe.',
         mType: '#godivacafe',
-
     }
     const instaProps5 = {
         link: "https://www.instagram.com/godivakorea/?hl=ko",
         img: <img src={ require('../../assets/img/main/insta5.jpg') } alt="인스타그램" />,
         type: '고디바가 벨기에 왕실 인증 초콜릿 브랜드로서 자랑스러운 50주년을 맞이하게 되었습니다! 왕실 인증 브랜드로서 50주년은 벨기에 최고의 독창성과 정교한 장인의 솜씨를 세계에 선사하겠다는 고디바의 신념을 성공적으로 이뤄왔다는 것을 의미합니다.',
         mType: '#GODIVA50주년',
-
     }
     const instaProps6 = {
         link: "https://www.instagram.com/godivakorea/?hl=ko",
         img: <img src={ require('../../assets/img/main/insta6.jpg') } alt="인스타그램" />,
         type: '@godiva NEW GODIVA Cube Truffles. Four luxurious layers of flavor. Exquisite inside ＆ out.',
         mType: '#CubeTruffles',
-
     }
     const instaProps7 = {
         link: "https://www.instagram.com/godivakorea/?hl=ko",
         img: <img src={ require('../../assets/img/main/insta7.jpg') } alt="인스타그램" />,
         type: '@godiva The best way to celebrate #NationalStrawberryDay ? By covering them in GODIVA chocolate. Check out our stories for a special! treat!',
         mType: '#StrawberryDay',
-
     }
+
+    //초콜렛 배경
 
     return (
         <>
             <SliderComponent />
 
             {/* 초콜렛 배경 */}
-            <div className="chocoBg">
-                
+            <Parallax 
+                className="chocoBg" 
+                strength={500} 
+                bgImage={require('../../assets/img/main/choco_bg2.png')}
+                bgImageSize={'cover'}
+            >
+
                 {/* event */}
                 <div className="event">
                     <div className="container">
@@ -190,7 +192,7 @@ function Contents() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Parallax>
 
             {/* 매장배너*/}
             <div className="store">

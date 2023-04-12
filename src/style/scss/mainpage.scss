@@ -3,11 +3,7 @@
 
 //background
 .chocoBg{
-    background-image: url(../../assets/img/main/choco_bg2.png); 
     background-color: $main3; 
-    background-attachment: fixed; 
-    background-repeat: no-repeat; 
-    background-size: cover;
 }
 @include desktopBg{
     .chocoBg{
