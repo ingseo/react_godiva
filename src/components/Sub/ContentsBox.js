@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../../style/scss/text.scss'
 
 export default function ContentsBox(props) {
