@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "https://ingseo.github.io/react_godiva/static/css/main.c6fa7f73.css",
-    "main.js": "https://ingseo.github.io/react_godiva/static/js/main.b92ea80c.js",
-    "static/js/787.2d54eda0.chunk.js": "https://ingseo.github.io/react_godiva/static/js/787.2d54eda0.chunk.js",
+    "main.css": "https://ingseo.github.io/react_godiva/static/css/main.da5139d1.css",
+    "main.js": "https://ingseo.github.io/react_godiva/static/js/main.dd69892e.js",
     "static/media/choco_bg2.png": "https://ingseo.github.io/react_godiva/static/media/choco_bg2.0ef0309373f400a0b2d7.png",
     "static/media/bgmain.jpg": "https://ingseo.github.io/react_godiva/static/media/bgmain.ebb57e490c97f50f73d8.jpg",
     "static/media/event2.png": "https://ingseo.github.io/react_godiva/static/media/event2.f22e2e6d6124f5ad7137.png",
@@ -56,12 +55,11 @@
     "static/media/menu3.jpg": "https://ingseo.github.io/react_godiva/static/media/menu3.301a4bb867c29a51b413.jpg",
     "static/media/m_menu3.jpg": "https://ingseo.github.io/react_godiva/static/media/m_menu3.77c16cd3293655c8d6b9.jpg",
     "index.html": "https://ingseo.github.io/react_godiva/index.html",
-    "main.c6fa7f73.css.map": "https://ingseo.github.io/react_godiva/static/css/main.c6fa7f73.css.map",
-    "main.b92ea80c.js.map": "https://ingseo.github.io/react_godiva/static/js/main.b92ea80c.js.map",
-    "787.2d54eda0.chunk.js.map": "https://ingseo.github.io/react_godiva/static/js/787.2d54eda0.chunk.js.map"
+    "main.da5139d1.css.map": "https://ingseo.github.io/react_godiva/static/css/main.da5139d1.css.map",
+    "main.dd69892e.js.map": "https://ingseo.github.io/react_godiva/static/js/main.dd69892e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6fa7f73.css",
-    "static/js/main.b92ea80c.js"
+    "static/css/main.da5139d1.css",
+    "static/js/main.dd69892e.js"
   ]
 }
