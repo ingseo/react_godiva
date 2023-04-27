@@ -7,56 +7,34 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .newsEvent .subVisual .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   text-align: center;
 }
-
 .newsEvent .subVisual .text .miniLogo {
   top: -4rem;
   width: 18rem;
 }
-
 .newsEvent .subVisual .text .type {
   top: -4rem;
   font-size: 6.7rem;
 }
-
 .newsEvent .subVisual .subGroup {
   position: absolute;
   bottom: 30%;
   left: calc(50% - 15rem);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
-
 .newsEvent .subVisual .subGroup li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 15rem;
   height: 5rem;
   font-size: 1.7rem;
@@ -64,20 +42,16 @@
   color: #f8f4eb;
   border: 0.1rem solid #f8f4eb;
   border-right: none;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
-
 .newsEvent .subVisual .subGroup li:nth-child(2) {
   border-right: 0.1rem solid #f8f4eb;
 }
-
 .newsEvent .subVisual .subGroup li.on {
   background: #f8f4eb;
   color: #3c2820;
 }
-
 .newsEvent .subVisual .underArrow {
   position: absolute;
   bottom: 3rem;
@@ -97,7 +71,6 @@
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
-
 @media (max-width: 640px) {
   .newsEvent .subVisual {
     height: 20rem;
@@ -119,10 +92,8 @@
     position: relative;
     top: 0;
     left: 0;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .newsEvent .subVisual .subGroup li {
     width: auto;
@@ -145,51 +116,34 @@
     display: none;
   }
 }
-
 .newsEvent .searchBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 100%;
   height: 15rem;
   background: #f8f4eb;
 }
-
 .newsEvent .searchBox .container {
   top: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding: 0;
   width: calc(100% - 8rem);
   color: #3c2820;
   z-index: 100;
 }
-
 .newsEvent .searchBox .container .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 4rem;
   width: 8rem;
   margin-right: 1rem;
   background: none;
   border: 0.1rem solid #3c2820;
 }
-
 .newsEvent .searchBox .container .search {
   height: 4rem;
 }
-
 .newsEvent .searchBox .container .search input {
   height: 4rem;
   width: 25rem;
@@ -198,100 +152,67 @@
   background: none;
   border: 0.1rem solid #3c2820;
 }
-
 .newsEvent .searchBox .container .search svg {
   position: absolute;
   right: 1rem;
   top: 1rem;
   font-size: 2rem;
 }
-
 @media (max-width: 640px) {
   .newsEvent .searchBox {
     top: 5rem;
     height: 10rem;
   }
   .newsEvent .searchBox .container {
-    -ms-touch-action: 50%;
-        touch-action: 50%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    touch-action: 50%;
+    justify-content: center;
   }
 }
-
 .newsEvent .newsEventBox {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-
 .newsEvent .newsEventBox .newsBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: calc(100vh - 25rem);
   background: #f8f4eb;
   color: #3c2820;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .newsEvent .newsEventBox .newsBox.on {
   left: 0;
 }
-
 .newsEvent .newsEventBox .newsBox.off {
   left: -100%;
 }
-
 .newsEvent .newsEventBox .newsBox .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   width: calc(100% - 8rem);
   height: 100%;
   padding: 0;
 }
-
 .newsEvent .newsEventBox .newsBox .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
   height: 6rem;
   border-bottom: 0.2rem solid #3c2820;
   font-size: 1.4rem;
   font-weight: bold;
 }
-
 .newsEvent .newsEventBox .newsBox .container .row:nth-child(1) {
   border-top: 0.2rem solid #3c2820;
 }
-
 .newsEvent .newsEventBox .newsBox .container .row .first {
   width: 10%;
   text-align: center;
 }
-
 .newsEvent .newsEventBox .newsBox .container .row a {
   display: block;
   width: 80%;
@@ -299,145 +220,96 @@
   white-space: nowrap;
   overflow: hidden;
 }
-
 .newsEvent .newsEventBox .newsBox .container .row .third {
   width: 10%;
   text-align: end;
 }
-
 .newsEvent .newsEventBox .newsBox .container::after {
   display: none;
 }
-
 .newsEvent .newsEventBox .newsBox .container::before {
   display: none;
 }
-
 .newsEvent .newsEventBox .eventBox {
   position: absolute;
   top: 0;
   left: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: calc(100vh - 25rem);
   background: #f8f4eb;
   color: #3c2820;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .newsEvent .newsEventBox .eventBox.on {
   left: 0;
 }
-
 .newsEvent .newsEventBox .eventBox.off {
   left: 100%;
 }
-
 .newsEvent .newsEventBox .eventBox .container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   width: calc(100% - 8rem);
   height: 100%;
   padding: 2rem 0;
 }
-
 .newsEvent .newsEventBox .eventBox .container::after {
   display: none;
 }
-
 .newsEvent .newsEventBox .eventBox .container::before {
   display: none;
 }
-
 .newsEvent .newsEventBox .eventBox .container .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border: 0.2rem solid #3c2820;
   font-weight: bold;
   font-size: 1.4rem;
 }
-
 .newsEvent .newsEventBox .count {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 15rem;
   width: 100%;
   height: 15rem;
   background: #f8f4eb;
   background: #f8f4eb;
 }
-
 .newsEvent .newsEventBox .count .btnGroup {
   top: -15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #3c2820;
 }
-
 .newsEvent .newsEventBox .count .btnGroup .arrowBtn {
   margin: 0 1rem;
   width: 3rem;
   cursor: pointer;
 }
-
 .newsEvent .newsEventBox .count .btnGroup .countBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 0;
   font-size: 1.4rem;
   font-weight: bold;
 }
-
 .newsEvent .newsEventBox .count .btnGroup .countBtn li {
   margin: 0 1rem;
   padding: 0.5rem;
   cursor: pointer;
 }
-
 @media (max-width: 1080px) {
   .newsEvent .newsEventBox .newsBox, .newsEvent .newsEventBox .eventBox {
     height: calc(100vh - 25rem);
   }
 }
-
 @media (max-width: 640px) {
   .newsEvent .newsEventBox .newsBox, .newsEvent .newsEventBox .eventBox {
     top: 5rem;
@@ -459,13 +331,8 @@
     width: 20%;
   }
   .newsEvent .newsEventBox .eventBox .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 2rem 0;
     margin-bottom: 0;
   }
@@ -503,5 +370,4 @@
   100% {
     bottom: 2.5rem;
   }
-}
-/*# sourceMappingURL=newsevent.css.map */
+}/*# sourceMappingURL=newsevent.css.map */

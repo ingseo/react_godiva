@@ -4,20 +4,14 @@
   height: 8rem;
   z-index: 200;
 }
-
 @media (max-width: 1080px) {
   .mNavi {
     display: block;
   }
 }
-
 .mNavi .fixed {
   position: fixed;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
   width: 100%;
   height: 8rem;
@@ -25,36 +19,27 @@
   color: #cdb376;
   border-bottom: 0.1rem solid rgba(207, 182, 110, 0.3);
 }
-
 .mNavi .fixed .left {
   text-align: center;
   z-index: 100;
 }
-
 .mNavi .fixed .left ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 0;
   margin-left: 1rem;
 }
-
 .mNavi .fixed .left ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 1rem;
   font-size: 1.8rem;
   cursor: pointer;
 }
-
 .mNavi .fixed .logo {
   position: absolute;
   width: 100%;
   text-align: center;
   z-index: 50;
 }
-
 .mNavi .fixed .logo img {
   cursor: pointer;
   width: auto;
@@ -69,26 +54,18 @@
   margin-right: 1rem;
   z-index: 1000;
 }
-
 @media (max-width: 1080px) {
   .mBtn {
     display: block;
   }
 }
-
 .mBtn .menuBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   cursor: pointer;
   padding: 2rem 1rem;
   width: 3.5rem;
 }
-
 .mBtn .menuBtn span {
   display: block;
   position: absolute;
@@ -97,34 +74,23 @@
   width: 2.8rem;
   height: 0.2rem;
   border-radius: 0.2rem;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   background: #cdb376;
 }
-
 .mBtn .menuBtn span:nth-child(1) {
-  -webkit-transform: translate(0, -8px);
-          transform: translate(0, -8px);
+  transform: translate(0, -8px);
 }
-
 .mBtn .menuBtn span:nth-child(3) {
-  -webkit-transform: translate(0, 8px);
-          transform: translate(0, 8px);
+  transform: translate(0, 8px);
 }
-
 .mBtn .active span:nth-child(1) {
-  -webkit-transform: translate(0, 0) rotate(45deg) !important;
-          transform: translate(0, 0) rotate(45deg) !important;
+  transform: translate(0, 0) rotate(45deg) !important;
 }
-
 .mBtn .active span:nth-child(2) {
-  -webkit-transform: scaleX(0) !important;
-          transform: scaleX(0) !important;
+  transform: scaleX(0) !important;
 }
-
 .mBtn .active span:nth-child(3) {
-  -webkit-transform: translate(0, 0) rotate(-45deg) !important;
-          transform: translate(0, 0) rotate(-45deg) !important;
+  transform: translate(0, 0) rotate(-45deg) !important;
 }
 
 .mMenu {
@@ -136,23 +102,15 @@
   background: #3c2820;
   z-index: 900;
   overflow: hidden;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   border-left: 0.1rem solid rgba(207, 182, 110, 0.3);
   text-align: left;
 }
-
 .mMenu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 10rem;
 }
-
 .mMenu ul li {
   padding: 1rem;
   margin: 2rem;
@@ -162,54 +120,38 @@
   font-size: 1.8em;
   cursor: pointer;
 }
-
 .mMenu ul li a {
   color: #cdb376;
 }
-
 .mMenu .mSubmenu > div {
   position: fixed;
   top: -10rem;
   right: -30rem;
 }
-
 .mMenu .mSubmenu > div .subMenu {
   width: 29.9rem;
   height: 100vh;
   background: #3c2820;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 10rem;
 }
-
 .mMenu .mSubmenu > div .subMenu li {
   font-style: normal !important;
 }
-
 .mMenu .subBottom {
   position: fixed;
   width: 30rem;
   bottom: 1rem;
 }
-
 .mMenu .subBottom ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
-
 .mMenu .subBottom ul li {
   font-size: 1.4rem;
   text-align: center;
 }
-
 .mMenu .subBottom ul li .icon {
   font-size: 1.8rem;
   line-height: 0;
@@ -227,5 +169,4 @@
   background: #000000;
   opacity: 0.8;
   z-index: 800;
-}
-/*# sourceMappingURL=mnavi.css.map */
+}/*# sourceMappingURL=mnavi.css.map */

@@ -7,67 +7,44 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .aboutGodiva .subVisual .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   text-align: center;
 }
-
 .aboutGodiva .subVisual .text p {
   top: -2rem;
   margin: 0;
   font-size: 3rem;
   font-weight: 200;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   color: #3c2820;
 }
-
 .aboutGodiva .subVisual .text .title {
   top: -2rem;
   font-size: 9rem;
   line-height: 10rem;
   color: #3c2820;
 }
-
 .aboutGodiva .subVisual .text .type {
   top: -3rem;
   font-size: 6.7rem;
 }
-
 .aboutGodiva .subVisual .subGroup {
   position: absolute;
   bottom: 19%;
   left: calc(50% - 15rem);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
-
 .aboutGodiva .subVisual .subGroup a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 15rem;
   height: 5rem;
   font-size: 1.7rem;
@@ -75,19 +52,15 @@
   color: #3c2820;
   border: 0.1rem solid #3c2820;
   border-right: none;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .aboutGodiva .subVisual .subGroup a:nth-child(2) {
   border-right: 0.1rem solid #3c2820;
 }
-
 .aboutGodiva .subVisual .subGroup a:hover {
   background-color: #3c2820;
   color: #f8f4eb;
 }
-
 @media (max-width: 640px) {
   .aboutGodiva .subVisual {
     height: 20rem;
@@ -114,10 +87,8 @@
     position: relative;
     top: 0;
     left: 0;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-columns: auto;
   }
   .aboutGodiva .subVisual .subGroup a {
     width: auto;
@@ -136,7 +107,6 @@
     border-top: none;
   }
 }
-
 .aboutGodiva .miniBanner {
   height: 11rem;
   width: 100%;
@@ -144,35 +114,25 @@
   background-position: center;
   background-size: cover;
 }
-
 .aboutGodiva .miniBanner .off {
   right: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
   margin: 0 auto;
   width: 100%;
   height: 100%;
   font-size: 2.1rem;
   color: #f8f4eb;
 }
-
 .aboutGodiva .miniBanner .off svg {
   margin-left: 2rem;
 }
-
 @media (max-width: 1080px) {
   .aboutGodiva .miniBanner .off {
     right: 10%;
   }
 }
-
 @media (max-width: 640px) {
   .aboutGodiva .miniBanner {
     top: 10rem;
@@ -185,14 +145,12 @@
     margin-right: 2rem;
   }
 }
-
 .aboutGodiva .menuList .list .bg {
   width: 100%;
   height: 42rem;
   background-size: cover;
   background-position: center;
 }
-
 .aboutGodiva .menuList .list .mBg {
   width: 100%;
   height: 55rem;
@@ -200,100 +158,70 @@
   background-position: center;
   display: none;
 }
-
 .aboutGodiva .menuList .list .subText {
   position: absolute;
 }
-
 .aboutGodiva .menuList .story .bg {
   background-image: url(../../assets/img/sub_about/storybg.jpg);
 }
-
 .aboutGodiva .menuList .story .mBg {
   background-image: url(../../assets/img/sub_about/m_storybg.jpg);
 }
-
 .aboutGodiva .menuList .story .subText {
   top: calc(50% - 15rem);
   right: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   text-align: end;
 }
-
 .aboutGodiva .menuList .story .subText .title {
   color: #3c2820;
 }
-
 .aboutGodiva .menuList .story .subText .type {
   color: #f8f4eb;
 }
-
 .aboutGodiva .menuList .story .subText .ex {
   color: #3c2820;
 }
-
 .aboutGodiva .menuList .story .subText .deialisBtn {
   border: 0.1rem solid #3c2820;
   color: #3c2820;
 }
-
 .aboutGodiva .menuList .story .subText .deialisBtn:hover {
   color: #f8f4eb;
   background: #3c2820;
 }
-
 .aboutGodiva .menuList .shop .bg {
   background-image: url(../../assets/img/sub_about/storebg.jpg);
 }
-
 .aboutGodiva .menuList .shop .mBg {
   background-image: url(../../assets/img/sub_about/m_storebg.jpg);
 }
-
 .aboutGodiva .menuList .shop .subText {
   top: calc(50% - 15rem);
   left: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: start;
 }
-
 .aboutGodiva .menuList .shop .subText .title {
   color: #f8f4eb;
 }
-
 .aboutGodiva .menuList .shop .subText .type {
   color: #cdb376;
 }
-
 .aboutGodiva .menuList .shop .subText .ex {
   color: #f8f4eb;
 }
-
 .aboutGodiva .menuList .shop .subText .deialisBtn {
   border: 0.1rem solid #f8f4eb;
   color: #f8f4eb;
 }
-
 .aboutGodiva .menuList .shop .subText .deialisBtn:hover {
   color: #3c2820;
   background: #f8f4eb;
 }
-
 @media (max-width: 1080px) {
   .aboutGodiva .menuList .story .subText {
     right: 10%;
@@ -302,7 +230,6 @@
     left: 10%;
   }
 }
-
 @media (max-width: 640px) {
   .aboutGodiva .menuList {
     top: 10rem;
@@ -319,16 +246,9 @@
     right: 0;
     text-align: center;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .aboutGodiva .menuList .story .subText .title, .aboutGodiva .menuList .shop .subText .title {
     top: -1rem;
@@ -363,5 +283,4 @@
   .aboutPage .footer {
     top: 10rem;
   }
-}
-/*# sourceMappingURL=aboutgodiva.css.map */
+}/*# sourceMappingURL=aboutgodiva.css.map */

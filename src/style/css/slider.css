@@ -11,24 +11,17 @@
     display: block;
   }
 }
-
 .regularEvent {
   background: #ffffff;
 }
-
 .regularEvent .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
   height: 11rem;
   padding: 0;
   overflow: hidden;
 }
-
 .regularEvent .container .title {
   margin: 0 20px;
   text-transform: uppercase;
@@ -37,50 +30,37 @@
   font-weight: bold;
   z-index: 100;
 }
-
 .regularEvent .container .title span:last-child {
   letter-spacing: 0.38rem;
 }
-
 .regularEvent .container .regularSlider {
   position: absolute;
   left: 0;
   width: 100%;
 }
-
 .regularEvent .container .regularSlider .rEvent {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-start;
+  justify-content: center;
   font-size: 1.7rem;
   height: 100%;
   width: 100%;
   margin-left: 5rem;
   background: #ffffff;
 }
-
 .regularEvent .container .regularSlider .rEvent li {
   margin: 0 2rem;
 }
-
 .regularEvent .container .regularSlider .rEvent li span {
   text-decoration: underline;
   cursor: pointer;
   font-weight: bold;
 }
-
 .regularEvent .mContainer {
   display: none;
   height: 8rem;
   margin-bottom: 0;
 }
-
 .regularEvent .mContainer li {
   line-height: 8rem;
   height: 100%;
@@ -88,13 +68,11 @@
   background: white;
   font-size: 1.7rem;
 }
-
 .regularEvent .mContainer li span {
   text-decoration: underline;
   cursor: pointer;
   font-weight: bold;
 }
-
 @media (max-width: 740px) {
   .regularEvent .container {
     display: none;
@@ -102,5 +80,4 @@
   .regularEvent .mContainer {
     display: block;
   }
-}
-/*# sourceMappingURL=slider.css.map */
+}/*# sourceMappingURL=slider.css.map */

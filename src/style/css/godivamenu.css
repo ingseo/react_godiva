@@ -7,84 +7,57 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .godivaMenu .subVisual .text {
   top: -4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   text-align: center;
 }
-
 .godivaMenu .subVisual .text p {
   top: 4rem;
   margin: 0;
   font-size: 5.6rem;
   font-weight: 200;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
-
 .godivaMenu .subVisual .text .title {
   font-size: 18rem;
   line-height: normal;
 }
-
 .godivaMenu .subVisual .text .type {
   top: -5rem;
   font-size: 8rem;
 }
-
 .godivaMenu .subVisual .subGroup {
   position: absolute;
   bottom: 23%;
   left: calc(50% - 30rem);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
-
 .godivaMenu .subVisual .subGroup a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 15rem;
   height: 5rem;
   font-size: 1.7rem;
   text-align: center;
   border: 0.1rem solid #3c2820;
   border-right: none;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .godivaMenu .subVisual .subGroup a:nth-child(4) {
   border-right: 0.1rem solid #3c2820;
 }
-
 .godivaMenu .subVisual .subGroup a:hover {
   background-color: #3c2820;
   color: #f8f4eb;
 }
-
 @media (max-width: 1080px) {
   .godivaMenu .subVisual {
     height: calc(100vh - 16rem);
@@ -105,7 +78,6 @@
     bottom: 27%;
   }
 }
-
 @media (max-width: 640px) {
   .godivaMenu .subVisual {
     height: 20rem;
@@ -130,10 +102,8 @@
     position: relative;
     top: 0;
     left: 0;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .godivaMenu .subVisual .subGroup a {
     width: auto;
@@ -159,70 +129,50 @@
     border-top: none;
   }
 }
-
 .godivaMenu .miniBanner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-
 .godivaMenu .miniBanner a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .godivaMenu .miniBanner .double {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 11rem;
 }
-
 .godivaMenu .miniBanner .hot {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding-right: 10%;
   background: #3c2820;
   color: #f8f4eb;
   font-size: 4rem;
   font-weight: 900;
 }
-
 .godivaMenu .miniBanner .hot p {
   margin-right: 5%;
   margin-bottom: 0;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
-
 .godivaMenu .miniBanner .today {
   padding-left: 10%;
   background: #ffffff;
 }
-
 .godivaMenu .miniBanner .today p {
   margin-bottom: 0;
   font-size: 1.4rem;
   font-weight: bold;
   text-align: left;
 }
-
 .godivaMenu .miniBanner .today img {
   height: 6rem;
   width: auto;
   margin-left: 2rem;
 }
-
 .godivaMenu .miniBanner .today svg {
   margin-left: 5%;
   font-size: 4rem;
 }
-
 @media (max-width: 1080px) {
   .godivaMenu .miniBanner .double {
     height: 8rem;
@@ -237,19 +187,13 @@
     font-size: 2.1rem;
   }
 }
-
 @media (max-width: 640px) {
   .godivaMenu .miniBanner {
     top: 10rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .godivaMenu .miniBanner .double {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .godivaMenu .miniBanner .hot {
     padding-right: 0;
@@ -258,14 +202,12 @@
     padding-left: 0;
   }
 }
-
 .godivaMenu .menuList .list .bg {
   width: 100%;
   height: 42rem;
   background-size: cover;
   background-position: center;
 }
-
 .godivaMenu .menuList .list .mBg {
   width: 100%;
   height: 55rem;
@@ -273,123 +215,87 @@
   background-position: center;
   display: none;
 }
-
 .godivaMenu .menuList .list .subText {
   position: absolute;
 }
-
 .godivaMenu .menuList .choco .bg {
   background-image: url(../../assets/img/sub_menu/bg_choco.jpg);
 }
-
 .godivaMenu .menuList .choco .mBg {
   background-image: url(../../assets/img/sub_menu/m_bg_choco.jpg);
 }
-
 .godivaMenu .menuList .choco .subText {
   top: calc(50% - 13rem);
   left: 20%;
   text-align: start;
 }
-
 .godivaMenu .menuList .choco .subText .type {
   left: 5rem;
 }
-
 .godivaMenu .menuList .drink .bg {
   background-image: url(../../assets/img/sub_menu/bg_drink.jpg);
 }
-
 .godivaMenu .menuList .drink .mBg {
   background-image: url(../../assets/img/sub_menu/m_bg_drink.jpg);
 }
-
 .godivaMenu .menuList .drink .subText {
   top: calc(50% - 15rem);
   right: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   text-align: end;
 }
-
 .godivaMenu .menuList .drink .subText .type {
   left: -5rem;
   color: #cdb376;
 }
-
 .godivaMenu .menuList .ice .bg {
   background-image: url(../../assets/img/sub_menu/bg_ice.jpg);
 }
-
 .godivaMenu .menuList .ice .mBg {
   background-image: url(../../assets/img/sub_menu/m_bg_ice.jpg);
 }
-
 .godivaMenu .menuList .ice .subText {
   top: calc(50% - 15rem);
   left: 20%;
   text-align: start;
 }
-
 .godivaMenu .menuList .ice .subText .type {
   left: 15rem;
 }
-
 .godivaMenu .menuList .snack .bg {
   background-image: url(../../assets/img/sub_menu/bg_snack.jpg);
 }
-
 .godivaMenu .menuList .snack .mBg {
   background-image: url(../../assets/img/sub_menu/m_bg_snack.jpg);
 }
-
 .godivaMenu .menuList .snack .subText {
   top: calc(50% - 13rem);
   right: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   text-align: end;
 }
-
 .godivaMenu .menuList .snack .subText .title {
   color: #f8f4eb;
 }
-
 .godivaMenu .menuList .snack .subText .type {
   right: 15rem;
   color: #cdb376;
 }
-
 .godivaMenu .menuList .snack .subText .ex {
   color: #f8f4eb;
 }
-
 .godivaMenu .menuList .snack .subText .deialisBtn {
   border: 0.1rem solid #f8f4eb;
   color: #f8f4eb;
 }
-
 .godivaMenu .menuList .snack .subText .deialisBtn:hover {
   color: #3c2820;
   background: #f8f4eb;
 }
-
 @media (max-width: 1080px) {
   .godivaMenu .menuList .choco .subText, .godivaMenu .menuList .ice .subText {
     left: 10%;
@@ -398,7 +304,6 @@
     right: 10%;
   }
 }
-
 @media (max-width: 640px) {
   .godivaMenu .menuList {
     top: 10rem;
@@ -415,16 +320,9 @@
     right: 0;
     text-align: center;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .godivaMenu .menuList .list .subText .title {
     top: -1rem;
@@ -442,5 +340,4 @@
   .menuPage .footer {
     top: 10rem;
   }
-}
-/*# sourceMappingURL=godivamenu.css.map */
+}/*# sourceMappingURL=godivamenu.css.map */
