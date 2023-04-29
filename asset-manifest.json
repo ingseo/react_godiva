@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://ingseo.github.io/react_godiva/static/css/main.da5139d1.css",
-    "main.js": "https://ingseo.github.io/react_godiva/static/js/main.1fc5ee80.js",
+    "main.js": "https://ingseo.github.io/react_godiva/static/js/main.27db47f4.js",
     "static/media/choco_bg2.png": "https://ingseo.github.io/react_godiva/static/media/choco_bg2.0ef0309373f400a0b2d7.png",
     "static/media/bgmain.jpg": "https://ingseo.github.io/react_godiva/static/media/bgmain.ebb57e490c97f50f73d8.jpg",
     "static/media/event2.png": "https://ingseo.github.io/react_godiva/static/media/event2.f22e2e6d6124f5ad7137.png",
@@ -56,10 +56,10 @@
     "static/media/m_menu3.jpg": "https://ingseo.github.io/react_godiva/static/media/m_menu3.77c16cd3293655c8d6b9.jpg",
     "index.html": "https://ingseo.github.io/react_godiva/index.html",
     "main.da5139d1.css.map": "https://ingseo.github.io/react_godiva/static/css/main.da5139d1.css.map",
-    "main.1fc5ee80.js.map": "https://ingseo.github.io/react_godiva/static/js/main.1fc5ee80.js.map"
+    "main.27db47f4.js.map": "https://ingseo.github.io/react_godiva/static/js/main.27db47f4.js.map"
   },
   "entrypoints": [
     "static/css/main.da5139d1.css",
-    "static/js/main.1fc5ee80.js"
+    "static/js/main.27db47f4.js"
   ]
 }
