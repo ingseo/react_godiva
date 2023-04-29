@@ -11,8 +11,8 @@ const AppRouter = () => {
 
     return(
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <ScrollToTop />
             <Router>
+                <ScrollToTop />
                 <Switch>
                     <Route exact path="/"><MainPage /></Route>
                     <Route exact path="/menu"><MenuPage /></Route>
