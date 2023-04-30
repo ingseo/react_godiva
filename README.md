@@ -4,7 +4,7 @@
 ***
 ### 프로젝트 소개
 해당 프로젝트는 2020년에 html과 css로 작업했던 고디바 웹사이트 리디자인 작업물을 React와 SCSS를 사용하여 완전히 재구성하는 것을 목표로 하였습니다. <br>
-100% 반응형 사이트로, 메인 외에도 4장의 서브페이지를 함께 작업하였으며 <b>'React 작업환경에 보다 익숙해지기 위한 프로젝트'</b>라는 목표에 충실하기 위해 노력했습니다.<br>
+100% 반응형 사이트로, 메인페이지 외에도 4장의 서브페이지를 함께 작업하였으며 <b>'React 작업환경에 보다 익숙해지기 위한 프로젝트'</b>라는 목표에 충실하기 위해 노력했습니다.<br>
 노션을 통해 보다 자세한 작업과정을 확인하실 수 있습니다 :arrow_forward: <a href="https://ingseo.notion.site/a614b41638b04c7da2191429b1cb6995?v=a2b364dcf694451e93f960ec5985c0d6"><img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white" /></a>
 ***
 ### 주요 요소
